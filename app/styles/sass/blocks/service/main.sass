@@ -1,0 +1,163 @@
+.service_page_wrapper
+  min-height: 100vh
+  background: $textcolor
+  color: white
+  padding-bottom: 120px
+  .container-fluid
+    height: 100%
+    .row
+      height: 100%
+  .title
+    margin-top: 90px
+    font-weight: 500
+    font-size: 60px
+    line-height: 76px
+    letter-spacing: 0.055em
+    color: #FBFBFB
+    margin-bottom: 18px
+    svg
+      margin-left: 30px
+  .subtitle
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+    letter-spacing: 0.06em
+    color: #FBFBFB
+    margin-bottom: 70px
+  .service_items
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 45px 30px
+    .item
+      height: 255px
+      width: calc(100% / 3 - 30px) 
+      border-radius: 47.085px
+      position: relative
+      img
+        position: absolute
+        right: 35px
+        top: 30px
+      .title
+        position: absolute
+        bottom: 30px
+        left: 36px
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        margin-bottom: 0
+    .first,.second,.third,.fourth,.fifth,.sixth
+      border-radius: 47.085px
+    .first
+      background: linear-gradient(246.53deg, #C7FF4F 3.38%, #E8FEBA 45.75%, #C7FF4F 94.54%)
+      .title
+        color: $textcolor
+      img
+        max-width: 200px
+    .second
+      background: #8854F6
+      .title
+        color: white
+      img
+        max-width: 200px
+        max-height: 120px
+    .third
+      background: white
+      .title
+        color: $textcolor
+      img  
+        max-width: 180px    
+    .fourth
+      background: white
+      .title
+        color: $textcolor
+      img
+        max-width: 160px
+    .fifth
+      background: #C7FF4F
+      .title
+        color: $textcolor
+      img
+        max-width: 100px
+    .sixth
+      background: url(../images/dist/service-sixth_bg.png)
+      .title
+        color: $textcolor
+      img
+        max-width: 160px
+
+
+.flip-card
+  perspective: 1000px
+.flip-card-inner
+  position: relative
+  width: 100%
+  height: 100%
+  transition: transform 0.8s
+  transform-style: preserve-3d
+.flip-card:hover .flip-card-inner 
+  transform: rotateY(180deg)
+.flip-card-front, .flip-card-back 
+  position: absolute
+  width: 100%
+  height: 100%
+  backface-visibility: hidden
+.flip-card-back 
+  background: #8854F6
+  border-radius: 47.085px
+  transform: rotateY(180deg)
+  padding: 28px 30px
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  h1
+    margin-bottom: 16px
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #FFFFFF
+  p 
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    color: #FFFFFF
+    width: 80%
+  .button
+    padding: 16px 20px
+    background: white
+    color: $textcolor
+    font-size: 11px
+    line-height: 14px
+
+.service_page
+  .layer
+    background: white
+  .service_wrapper
+    background: $textcolor
+    color: white
+  .button.button-dark
+    display: none
+  .wrapper-item
+    background: #2F2F2F !important
+    border: none !important
+  .wrapper-item.primary
+    background: linear-gradient(180deg, #8854F6 0%, rgba(136, 84, 246, 0.62) 100%) !important
+    .tags
+      .item
+        &:last-child
+          color: #8854F6 !important
+  .tags
+    .item
+      .tags .item:last-child
+        color: #8854F6 !important
+    .item
+      border-color: white !important
+      color: white !important
+  .swiper-scrollbar.swiper-scrollbar-horizontal
+    background: #545454
+  .swiper-scrollbar-drag
+    background: #141414

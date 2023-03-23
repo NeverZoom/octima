@@ -1,0 +1,52 @@
+.hero
+  // background-color: $textcolor
+  height: 100vh
+  // min-height: 1000px
+  padding-bottom: 50px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  position: relative
+  #myVideo
+    position: absolute
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    z-index: 1
+  h1.main-title
+    margin-bottom: 0
+    z-index: 2
+    font-weight: 400
+    font-size: 88px
+    line-height: 113px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #FFFFFF
+    position: relative
+    height: 100%
+    span
+      display: inline-block
+      position: absolute
+      font-weight: 400
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      color: #FFFFFF
+      height: auto
+      &:nth-child(1)
+        right: 0
+        top: 10%
+        text-align: right
+      &:nth-child(2)
+        left: 0
+        bottom: 10%
+    div
+      display: inline-block
+      &:nth-child(5)
+        float: right
+      &:nth-child(4)
+        display: flex
+        justify-content: space-between
+        align-items: center

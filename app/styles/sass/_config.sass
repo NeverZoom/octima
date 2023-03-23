@@ -1,0 +1,63 @@
+// USER VARIABLES SECTION
+
+$accent: skyblue // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #141414 // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: akzidenzgroteskpro, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+@import 'node_modules/magnific-popup/src/css/main.scss' // magnific-popup
+@import 'node_modules/swiper/swiper.scss' // swiper
+
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('akzidenzgroteskpro', normal, 300, '../fonts/akzidenzgroteskpro_lightex.woff2')
+@include font('akzidenzgroteskpro', normal, 400, '../fonts/akzidenzgroteskpro_regular.woff2')
+@include font('akzidenzgroteskpro', normal, 500, '../fonts/akzidenzgroteskpro_mdex.woff2')
+@include font('akzidenzgroteskpro', normal, 600, '../fonts/akzidenzgroteskpro_boldex.woff2')
+@include font('Montserrat', normal, 700, '../fonts/Montserrat-Bold.woff2')
+@include font('Montserrat', normal, 400, '../fonts/Montserrat-Regular.woff2')
+
+// GENERAL CSS SETTINGS
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: #E30000
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden

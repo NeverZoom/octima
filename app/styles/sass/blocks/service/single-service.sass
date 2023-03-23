@@ -1,0 +1,87 @@
+.single-service_wrapper
+  color: white
+  background: $textcolor
+  padding-bottom: 100px
+  .title
+    font-weight: 500
+    font-size: 60px
+    line-height: 76px
+    letter-spacing: 0.055em
+    margin-top: 90px
+    margin-bottom: 70px
+    color: #FFFFFF
+  .main_wrapper
+    background: #2F2F2F
+    border-radius: 47px
+    padding: 50px 70px 70px 70px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .button-outline
+      border-color: white
+      color: white
+      margin: 0 auto
+      &:hover
+        background: white
+        color: $textcolor
+    .main-title
+      margin-bottom: 80px
+      font-weight: 500
+      font-size: 32px
+      line-height: 41px
+      letter-spacing: 0.055em
+      text-transform: uppercase
+      color: #FFFFFF
+    .list
+      counter-reset: list
+      .gallery
+        margin-bottom: 80px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .img
+          border-radius: 47.085px
+          height: 255px
+          width: calc(100% / 3 - 30px)
+          display: flex
+          justify-content: center
+          align-items: center
+          img
+            width: 100%
+      .item
+        padding-left: 90px
+        position: relative
+        &::before
+          content: counter(list)
+          counter-increment: list
+          position: absolute
+          left: 0
+          border-radius: 100%
+          top: -10px
+          height: 56px
+          width: 56px
+          border: 2px solid #FFFFFF
+          display: flex
+          justify-content: center
+          align-items: center
+        .title
+          margin-bottom: 18px
+          font-weight: 500
+          font-size: 24px
+          line-height: 31px
+          letter-spacing: 0.05em
+          margin-top: 0
+          span
+            display: inline-block
+            padding-left: 15px
+            font-weight: 400
+            font-size: 10px
+            line-height: 13px
+            letter-spacing: 0.05em
+        p
+          margin-bottom: 80px
+          font-weight: 400
+          font-size: 16px
+          line-height: 22px
+          letter-spacing: 0.06em
+          width: 60%

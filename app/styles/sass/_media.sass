@@ -1,0 +1,1494 @@
++media-breakpoint-up(xs)
+  main, .layer
+    >section
+      padding: 0 10px
+  .hero
+    padding-bottom: 70px
+    h1.main-title
+      font-size: 7.5vw
+      line-height: 9vw
+      svg
+        width: 7vw
+        height: 7vw
+      span
+        display: block
+        max-width: 290px
+        position: relative
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.03em
+        &:nth-child(1)
+          right: auto
+          top: auto
+          text-align: left
+        &:nth-child(2)
+          left: auto
+          bottom: auto
+          margin-bottom: 30px
+      div
+        display: inline
+        &:nth-child(5)
+          float: initial
+        &:nth-child(4)
+          display: inline
+  .about_wrapper
+    mask-image: url(../images/dist/about_layer_mobile.svg)
+    padding-bottom: 70px
+    mask-repeat: no-repeat
+    mask-size: cover
+    .button
+      font-size: 2.5vw
+      line-height: 2.7vw
+      padding: 16px 2.8vw
+    .top
+      bottom: 0
+      right: 70px
+      display: none
+    .about_wrapper__content
+      min-height: 120vh
+      height: auto
+      .wrapper-title
+        margin-top: 60px
+        margin-bottom: 30px
+        font-size: 9vw
+        line-height: 10vw
+        svg
+          width: 8vw
+          height: 8vw
+      p
+        margin-bottom: 40px
+        font-size: 14px
+        line-height: 16px
+        letter-spacing: 0.05em
+        width: 100%
+      .button-dark
+        margin-right: 15px
+      .button
+        margin-bottom: 40px
+    .composition
+      margin-bottom: 70px
+      gap: 15px
+      .one, .two
+        position: absolute
+      .one
+        bottom: 95%
+        left: 25%
+        width: 50px
+        height: 50px
+      .two
+        width: 50px
+        height: 50px
+        right: 50%
+        top: 95%
+      .column
+        width: 50%
+        gap: 15px 0
+        .block
+          img
+            margin-bottom: 11px
+          .title
+            font-size: 11px
+            line-height: 14px
+            margin-bottom: 11px
+          .subtitle
+            font-size: 11px
+            width: 80%
+            line-height: 14px
+        .first-block
+          padding: 15px
+          img
+            height: 70px
+        .second-block
+          padding: 15px
+          img
+            height: 70px
+        .third-block
+          padding: 15px
+          width: 100%
+          img
+            width: 60%
+        .fourth-block
+          padding: 15px
+  .section-title
+    margin-top: 10px
+    font-size: 3vw
+    line-height: 3.2vw
+  .button
+    font-size: 2.4vw
+    line-height: 3.1vw
+    padding: 16px 3vw
+  .case_wrapper
+    mask-image: url(../images/dist/case_layer_mobile.svg)
+    mask-repeat: no-repeat
+    mask-size: cover
+    min-height: 100vh
+    padding-bottom: 40px
+    .top
+      display: none
+    .button-outline
+      margin-top: 80px
+    .case_wrapper__content
+      padding-top: 50px
+      .navs
+        margin-bottom: 50px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        .category
+          nav
+            ul
+              flex-wrap: wrap
+              gap: 15px 6px
+              li
+                a
+                  margin-right: 0px
+                  font-size: 2.4vw
+                  line-height: 2.6vw
+                  padding: 16px 3.4vw
+        .view
+          display: none
+          gap: 10px
+    .case_show_wrapper
+      .case_show_wrapper_item.active
+        .first_list
+          .block
+            .tags
+              gap: 10px
+              margin-bottom: 45px
+              .item
+                padding: 10px 20px
+                font-size: 14px
+                line-height: 18px
+                border-radius: 28px
+            .title
+              margin-bottom: 7px
+              font-size: 36px
+              line-height: 46px
+            .info
+              margin-bottom: 45px
+              font-size: 16px
+              line-height: 22px
+            .image
+              margin-bottom: 100px
+            .link
+              padding: 23px 27px
+        .first_grid
+          min-height: 670px
+          grid-template-columns: 1fr 1fr
+          grid-template-rows: 1fr 0.08fr 0.08fr 1fr 1fr
+          gap: 10px 10px
+          grid-template-areas:  "one four" "two four" "two four" "two three" "six six"
+          .block
+            margin-bottom: 0px
+            border-radius: 47px
+            padding: 15px
+            a.show
+              bottom: 15px
+            p
+              font-size: 11.884px
+              line-height: 14px
+              width: 80%
+              margin-top: 10px
+    .one, .four, .two, .three, .five, .six
+      a
+        display: none
+    .one
+      grid-area: one
+      a
+        right: 15px
+    .four
+      grid-area: four
+      a
+        left: 15px
+    .two
+      grid-area: two
+      a
+        left: 15px
+    .three
+      grid-area: three
+      a
+        right: 15px
+    .five
+      display: none
+      grid-area: five
+      a
+        right: 15px
+    .six
+      grid-area: six
+      a
+        left: 15px
+  .layer
+    background: $textcolor
+  main
+    background: none
+  .service_wrapper
+    margin-top: -11px
+    mask-image: url(../images/dist/about_layer_mobile.svg)
+    mask-repeat: no-repeat
+    .swiper-scrollbar.swiper-scrollbar-horizontal
+      display: block
+    .service_wrapper__content
+      padding-bottom: 60px
+      min-height: 150vh
+      margin-top: 60px
+      .wrapper-title
+        font-size: 9vw
+        line-height: 10vw
+        svg
+          width: 9vw
+          height: 9vw
+      .swiper_servs
+        margin-bottom: 90px
+      .wrapper-item
+        padding: 34px 40px 31px 40px
+        width: calc( 100% / 3 - 40px)
+        .tags
+          gap: 10px
+          margin-bottom: 22px
+          .item
+            font-size: 11.0229px
+            line-height: 14px
+            padding: 6px 13px
+        .title
+          font-size: 32px
+          line-height: 41px
+        .subtitle
+          margin-bottom: 40px
+          font-size: 12px
+          line-height: 15px
+        .list
+          padding-left: 15px
+          margin-bottom: 45px
+          li
+            font-size: 12px
+            line-height: 15px
+            margin-bottom: 11px
+            span
+              font-size: 10px
+              line-height: 12px
+        .price
+          font-size: 32px
+          line-height: 39px
+          .price-currency
+            font-size: 13.2414px
+            line-height: 16px
+          .price-info
+            font-size: 8px
+            line-height: 10px
+            margin-bottom: 12px
+        .last-price
+          font-size: 15.0303px
+          line-height: 18px
+          .last-price-currency
+            font-size: 8.29258px
+            line-height: 10px
+        .button
+          padding: 16px 31px
+          font-size: 11px
+          line-height: 14px
+          margin: 22px auto 0
+  .button
+    font-size: 3vw
+    line-height: 3.1vw
+    padding: 16px 6.7vw
+  footer
+    margin-top: -24px
+    padding-bottom: 30px
+    svg.logo
+      width: 114px
+      path
+        fill: #BFBFBF
+    .big-button
+      margin-bottom: 20px
+      height: 113px
+      font-size: 14px
+      line-height: 18px
+    .rights
+      margin-top: 0px
+      font-size: 9px
+      line-height: 12px
+    .link
+      text-align: right
+      display: block
+      margin-top: 0px
+      font-size: 12px
+      line-height: 15px
+      margin-left: 0px
+  .service_page_wrapper
+    padding-bottom: 120px
+    .title
+      margin-top: 60px
+      font-size: 8vw
+      line-height: 10vw
+      margin-bottom: 18px
+      svg
+        margin-left: 0px
+        width: 9vw
+        height: 9vw
+    .subtitle
+      font-size: 3.5vw
+      line-height: 4.5vw
+      margin-bottom: 50px
+    .service_items
+      gap: 15px 7px
+      .item
+        border-radius: 20px
+        height: 180px
+        width: calc(100% / 2 - 7px) 
+        img
+          right: 15px
+          top: 10px
+        .title
+          bottom: 13px
+          left: 15px
+          font-size: 12px
+          line-height: 18px
+      .first,.second,.third,.fourth,.fifth,.sixth
+        border-radius: 20px
+        img
+          width: 70%
+      .first
+        img
+          max-width: 170px
+      .second
+        img
+          max-width: 130px
+          max-height: 80px
+      .third
+        img  
+          max-width: 150px   
+      .fourth
+        img
+          max-width: 115px
+      .fifth
+        img
+          max-width: 70px
+      .sixth
+        img
+          max-width: 100px
+  .service_page_calc
+    mask-image: url(../images/dist/calc_layer_mobile.svg)
+    mask-repeat: no-repeat
+    mask-size: cover
+    .top
+      display: none
+    .section-title
+      margin-left: -20px
+    .service_page_calc__wrapper
+      padding-bottom: 60px
+      .title
+        margin-top: 70px
+        font-size: 8vw
+        line-height: 9vw
+        svg
+          width: 9vw
+          height: 9vw
+          margin-left: 0px
+      .calc_form.full
+        .block
+          height: calc(100% - 20px)
+      .calc_form
+        h3.title
+          font-size: 16px
+          line-height: 20px
+          margin-bottom: 15px
+          margin-top: 20px
+        .main_serv
+          gap: 0px
+          .block
+            padding: 30px 18px
+            flex-basis: 100%
+        .total
+          min-height: 230px
+          padding: 35px
+          flex-basis: 100%
+          max-width: 100%
+          .price
+            font-size: 46px
+            line-height: 59px
+            bdi
+              font-size: 25px
+              line-height: 32px
+          .button
+            font-size: 11px
+            line-height: 14px
+          span
+            font-size: 12px
+            line-height: 15px
+        .block
+          padding: 30px 24px
+          margin-bottom: 10px
+          .block-title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 23px
+          .line
+            padding-left: 0px
+            margin-bottom: 8px
+            .input
+              height: 13px
+              width: 13px
+            label
+              gap: 16px
+              .name
+                font-size: 12px
+                line-height: 15px
+            .price
+              font-size: 16px
+              line-height: 20px
+              bdi
+                font-size: 12px
+                line-height: 15px
+        .block.main
+          .line
+            width: 100%
+            margin-bottom: 30px
+            label
+              flex-basis: 65%
+              gap: 8px
+              input
+                width: 14px
+                height: 14px
+              .name
+                font-size: 14px
+                line-height: 18px
+              span
+                font-size: 11px
+                line-height: 14px
+            .price
+              font-size: 20px
+              line-height: 25px
+              bdi
+                font-size: 12px
+                line-height: 16px
+  .flip-card:hover .flip-card-inner 
+    transform: none
+  .single-service_wrapper
+    padding-bottom: 80px
+    .title
+      margin-top: 70px
+      margin-bottom: 40px
+      font-size: 9vw
+      line-height: 10vw
+      svg
+        width: 9vw
+        height: 9vw
+    .main_wrapper
+      border-radius: 34px
+      padding: 25px 15px 40px 15px
+      .main-title
+        margin-bottom: 40px
+        font-size: 16px
+        line-height: 22px
+      .list
+        counter-reset: list
+        .gallery.column
+          flex-direction: column
+          .img
+            height: 220px
+            width: 100%
+            margin-bottom: 15px
+        .gallery.rov
+          flex-wrap: wrap
+          .img
+            margin-bottom: 15px 
+            &:nth-child(1), &:nth-child(2)
+              height: 150px
+              width: calc(100% / 2 - 7px)
+            &:nth-child(3)
+              width: 100%
+              height: 220px
+        .gallery
+          margin-bottom: 40px
+          .img
+            overflow: hidden
+            border-radius: 20px
+            height: 150px
+            width: calc(100% / 3 - 30px)
+        .item
+          padding-left: 45px
+          &::before
+            left: 0
+            top: -5px
+            height: 36px
+            width: 36px
+          .title
+            margin-bottom: 16px
+            font-size: 14px
+            line-height: 18px
+            span
+              padding-left: 15px
+              font-size: 10px
+              line-height: 13px
+          p
+            margin-bottom: 40px
+            font-size: 12px
+            line-height: 18px
+            width: 100%
+  .case_page
+    .title
+      margin-top: 50px
+      margin-bottom: 18px
+      font-size: 7vw
+      line-height: 8vw
+      svg
+        width: 9vw
+        height: 9vw
+        margin-left: 0px
+    .subtitle
+      font-size: 12px
+      line-height: 15px
+      span
+        display: block
+        margin-right: 14px
+  .single-case_page
+    padding: 60px 0 60px 0
+    .main-tag
+      padding: 15px
+    .line-info
+      margin-top: 20px
+    .name
+      font-size: 10vw
+      line-height: 10vw
+    .info
+      font-size: 4.5vw
+      line-height: 5vw
+    .section
+      margin-top: 50px
+      .img-ovf
+        border-radius: 20px
+        margin-bottom: 15px
+        max-height: 280px
+        height: calc(100% - 15px)
+      img
+        object-fit: cover
+        border-radius: 20px
+        height: 100%
+      .about-brand
+        justify-content: space-between
+        align-items: flex-start
+        flex-direction: column
+        margin: 70px 0 30px 0
+        .title
+          font-size: 24px
+          line-height: 30px
+          margin-bottom: 15px
+        p
+          font-size: 14px
+          line-height: 22px
+          width: 100%
+  .wrapper_404
+    height: 100vh
+    .first-svg
+      bottom: -90px
+      left: 4px
+    .second-svg
+      top: -80px
+      right: -10px
+    .third-svg
+      top: 127px
+      right: -3px
+    .title
+      font-size: 130.577px
+      line-height: 170px
+  .contact
+    min-height: 120vh
+    height: auto
+    padding-bottom: 60px
+    .page-title
+      margin-top: 60px
+      font-size: 9vw
+      line-height: 10vw
+      svg
+        width: 9vw
+        height: 9vw
+        margin-left: 0px
+    .subtitle
+      font-size: 14px
+      line-height: 17px
+      margin-top: 15px
+      margin-bottom: 60px
+    .contact_wrapper
+      gap: 20px
+      flex-direction: column
+      .phone
+        width: 100%
+        padding: 35px
+        span
+          margin-bottom: 11px
+          font-size: 16px
+          line-height: 20px
+        a
+          font-size: 24px
+          line-height: 32px
+      .mail
+        width: 100%
+        padding: 35px
+        span
+          margin-bottom: 11px
+          font-size: 16px
+          line-height: 20px
+        a
+          font-size: 24px
+          line-height: 32px
+      .social
+        margin-bottom: 60px
+        gap: 20px
+        a
+          padding: 7px 7px 7px 31px
+          gap: 20px
+          font-size: 21px
+          line-height: 27px
+  .taplink_wrapper
+    height: auto
+    padding: 60px 0
+    .buttons
+      .button-first, .button-second
+        font-size: 18px
+        line-height: 22px
+  .formpopup
+    max-width: none
+    padding: 53px 15px 90px 15px
+    border-radius: 0px
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    form
+      .lil-text
+        display: none
+  .mfp-container
+    position: fixed !important
+
++media-breakpoint-up(sm)
+  .about_wrapper
+    .about_wrapper__content
+      .wrapper-title
+        font-size: 5vw
+        line-height: 6vw
+  .button
+    font-size: 1.7vw
+    line-height: 1.9vw
+    padding: 1.9vw 2.8vw
+  .case_wrapper
+    .case_wrapper__content
+      .navs
+        .category
+          nav
+            ul
+              li
+                a
+                  font-size: 1.7vw
+                  line-height: 1.9vw
+                  padding: 1.9vw 2.8vw
+  .service_wrapper
+    .service_wrapper__content
+      .wrapper-title
+        font-size: 5vw
+        line-height: 6vw
+  .service_page_wrapper
+    .title
+      font-size: 5vw
+      line-height: 6vw
+      svg
+        width: 8vw
+        height: 8vw
+    .subtitle
+      font-size: 2.5vw
+      line-height: 3.5vw
+  .service_page_wrapper
+    .service_items
+      .item
+        height: 220px
+      .first,.second,.third,.fourth,.fifth,.sixth
+        img
+          width: 100%
+  .service_page_calc
+    .service_page_calc__wrapper
+      .title
+        font-size: 5vw
+        line-height: 6vw
+        svg
+          width: 8vw
+          height: 8vw
+  .single-service_wrapper
+    .title
+      font-size: 5vw
+      line-height: 6vw
+      svg
+        width: 8vw
+        height: 8vw
+  .case_page
+    .title
+      font-size: 5vw
+      line-height: 6vw
+      svg
+        width: 8vw
+        height: 8vw
+        margin-left: 0px
+  .contact
+    .page-title
+      font-size: 5vw
+      line-height: 6vw
+      svg
+        width: 8vw
+        height: 8vw
+  .single-case_page
+    .name
+      font-size: 6vw
+      line-height: 7vw
+    .info
+      font-size: 3.5vw
+      line-height: 4vw
+
++media-breakpoint-up(md)
+  .hero
+    h1.main-title
+      font-size: 6.5vw
+      line-height: 8vw
+      svg
+        width: 6vw
+        height: 6vw
+  .section-title
+    margin-top: 15px
+    font-size: 16px
+    line-height: 18px
+  .about_wrapper
+    .about_wrapper__content
+      .button
+        margin-bottom: 10px
+    .composition
+      margin-bottom: 0px
+  .case_wrapper
+    .case_show_wrapper
+      .case_show_wrapper_item.active
+        .first_grid
+          min-height: 800px
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+          grid-auto-columns: 1fr
+          gap: 20px 20px
+          grid-template-areas: "one one one two two two five five five five" "one one one two two two five five five five" "four four four two two two six six six six" "four four four two two two six six six six" "four four four three three three six six six six" "four four four three three three six six six six"
+    .five
+      display: block
+  .service_wrapper
+    .service_wrapper__content
+      .wrapper-title
+        svg
+          width: 60px
+          height: 60px
+  .service_page_wrapper
+    .title
+      svg
+        width: 50px
+        height: 50px  
+  .service_page_wrapper
+    .service_items
+      .item
+        height: 240px
+        width: calc(100% / 3 - 14px) 
+      .first,.second,.third,.fourth,.fifth,.sixth
+        img
+          width: 100%
+  .service_page_calc
+    .service_page_calc__wrapper
+      .title
+        svg
+          width: 70px
+          height: 70px
+  .single-service_wrapper
+    .title
+      svg
+        width: 70px
+        height: 70px
+  .case_page
+    .title
+      svg
+        width: 70px
+        height: 70px
+  .contact
+    .page-title
+      svg
+        width: 50px
+        height: 50px
+  .formpopup
+    max-width: 490px
+    padding: 53px 53px 25px 53px
+    border-radius: 28px
+    height: auto
+    form
+      .lil-text
+        display: block
+  .mfp-container
+    position: absolute !important
+
++media-breakpoint-up(lg)
+  main, .layer
+    >section
+      padding: 0 30px
+  .hero
+    padding-bottom: 30px
+    h1.main-title
+      font-size: 6vw
+      line-height: 7vw
+      letter-spacing: 0.05em
+      svg
+        width: 6vw
+        height: 6vw
+      span
+        display: inline-block
+        max-width: 100%
+        position: absolute
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.03em
+        &:nth-child(1)
+          right: 0
+          top: 10%
+          text-align: right
+        &:nth-child(2)
+          left: 0
+          bottom: 10%
+          margin-bottom: 0px
+      div
+        display: inline-block
+        &:nth-child(5)
+          float: right
+        &:nth-child(4)
+          display: flex
+          justify-content: space-between
+          align-items: center
+  .top-line
+    padding-top: 25px
+    nav
+      ul
+        gap: 0 35px
+        li
+          a
+            font-size: 0.7vw
+            line-height: 0.9vw
+  .button
+    font-size: 1.2vw
+    line-height: 1.3vw
+    padding: 2vw 3vw
+  .about_wrapper
+    mask-image: url(../images/dist/about_layer.svg)
+    padding-bottom: 40px
+    .button
+      font-size: 11px
+      line-height: 14px
+      padding: 16px 30px
+    .top
+      display: block
+      bottom: 0
+      right: 70px
+    .about_wrapper__content
+      height: 100vh
+      min-height: 100vh
+      .wrapper-title
+        margin-top: 0px
+        margin-bottom: 50px
+        font-size: 4vw
+        line-height: 4.3vw
+        svg
+          width: 4vw
+          height: 4vw
+      p
+        margin-bottom: 70px
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.05em
+        width: 60%
+      .button-dark
+        margin-right: 15px
+    .composition
+      margin-bottom: 0px
+      gap: 20px
+      .one, .two
+        position: absolute
+      .one
+        bottom: -15%
+        left: 25%
+        width: 101px
+        height: 101px
+      .two
+        width: 49px
+        height: 49px
+        right: -50px
+        top: 30%
+      .column
+        width: 50%
+        gap: 24px 0
+        .block
+          img
+            margin-bottom: 11px
+          .title
+            font-size: 12px
+            line-height: 15px
+            margin-bottom: 11px
+          .subtitle
+            font-size: 12px
+            width: 80%
+            line-height: 15px
+        .first-block
+          padding: 30px 24px
+        .second-block
+          padding: 22px
+        .third-block
+          padding: 22px
+          width: 90%
+          img
+            width: 60%
+        .fourth-block
+          padding: 20px
+  .section-title
+    margin-top: 20px
+    font-size: 14px
+    line-height: 18px
+  .case_wrapper
+    mask-image: url(../images/dist/case_layer.svg)
+    mask-repeat: round
+    min-height: 100vh
+    padding-bottom: 40px
+    .top
+      display: block
+    .button-outline
+      margin-top: 96px
+    .case_wrapper__content
+      padding-top: 80px
+      .navs
+        margin-bottom: 85px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: nowrap
+        .category
+          nav
+            ul
+              // flex-wrap: nowrap
+              // gap: 0
+              li
+                a
+                  margin-right: 12px
+                  font-size: 11px
+                  line-height: 14px
+                  padding: 14px 16px
+        .view
+          display: flex
+          gap: 10px
+    .case_show_wrapper
+      .case_show_wrapper_item.active
+        .first_list
+          .block
+            .tags
+              gap: 10px
+              margin-bottom: 45px
+              .item
+                padding: 10px 20px
+                font-size: 14px
+                line-height: 18px
+                border-radius: 28px
+            .title
+              margin-bottom: 7px
+              font-size: 36px
+              line-height: 46px
+            .info
+              margin-bottom: 45px
+              font-size: 16px
+              line-height: 22px
+            .image
+              margin-bottom: 100px
+            .link
+              padding: 23px 27px
+        .first_grid
+          min-height: 800px
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+          grid-auto-columns: 1fr
+          gap: 20px 20px
+          grid-template-areas: "one one one two two two five five five five" "one one one two two two five five five five" "four four four two two two six six six six" "four four four two two two six six six six" "four four four three three three six six six six" "four four four three three three six six six six"
+          .block
+            margin-bottom: 0px
+            border-radius: 47px
+            padding: 30px
+            a.show
+              bottom: 15px
+            p
+              width: 60%
+              margin-top: 30px
+              font-size: 13.884px
+              line-height: 18px
+    .one, .four, .two, .three, .five, .six
+      a
+        display: block
+    .one
+      grid-area: one
+      a
+        right: 15px
+    .four
+      grid-area: four
+      a
+        left: 15px
+    .two
+      grid-area: two
+      a
+        left: 15px
+    .three
+      grid-area: three
+      a
+        right: 15px
+    .five
+      grid-area: five
+      display: block
+      a
+        right: 15px
+    .six
+      grid-area: six
+      a
+        left: 15px
+  .layer
+    background: none
+  main
+    background: $textcolor
+  .service_wrapper
+    margin-top: 0px
+    mask-image: url(../images/dist/about_layer.svg)
+    mask-repeat: round
+    .service_wrapper__content
+      padding-bottom: 120px
+      min-height: 150vh
+      margin-top: 30px
+      .swiper-scrollbar.swiper-scrollbar-horizontal
+        display: none
+      .wrapper-title
+        font-size: 55px
+        line-height: 60px
+      .wrapper-item
+        padding: 34px 40px 31px 40px
+        width: calc( 100% / 3 - 40px)
+        .tags
+          gap: 10px
+          margin-bottom: 22px
+          .item
+            font-size: 11.0229px
+            line-height: 14px
+            padding: 6px 13px
+        .title
+          font-size: 32px
+          line-height: 41px
+        .subtitle
+          margin-bottom: 40px
+          font-size: 12px
+          line-height: 15px
+        .list
+          padding-left: 15px
+          margin-bottom: 45px
+          li
+            font-size: 12px
+            line-height: 15px
+            margin-bottom: 11px
+            span
+              font-size: 10px
+              line-height: 12px
+        .price
+          font-size: 32px
+          line-height: 39px
+          .price-currency
+            font-size: 13.2414px
+            line-height: 16px
+          .price-info
+            font-size: 8px
+            line-height: 10px
+            margin-bottom: 12px
+        .last-price
+          font-size: 15.0303px
+          line-height: 18px
+          .last-price-currency
+            font-size: 8.29258px
+            line-height: 10px
+        .button
+          padding: 16px 31px
+          font-size: 11px
+          line-height: 14px
+          margin: 22px auto 0
+  .service_page_wrapper
+    padding-bottom: 120px
+    .title
+      margin-top: 90px
+      font-size: 60px
+      line-height: 76px
+      margin-bottom: 18px
+      svg
+        margin-left: 30px
+    .subtitle
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 70px
+    .service_items
+      gap: 45px 30px
+      .item
+        border-radius: 47.085px
+        height: 255px
+        width: calc(100% / 3 - 30px) 
+        img
+          right: 35px
+          top: 30px
+        .title
+          bottom: 30px
+          left: 36px
+          font-size: 16px
+          line-height: 20px
+      .first,.second,.third,.fourth,.fifth,.sixth
+        border-radius: 47.085px
+        img
+          width: 50%
+      .first
+        img
+          max-width: 200px
+      .second
+        img
+          max-width: 200px
+          max-height: 120px
+      .third
+        img  
+          max-width: 180px   
+      .fourth
+        img
+          max-width: 160px
+      .fifth
+        img
+          max-width: 100px
+      .sixth
+        img
+          max-width: 160px
+  .flip-card:hover .flip-card-inner 
+    transform: rotateY(180deg)
+  .single-service_wrapper
+    padding-bottom: 100px
+    .title
+      font-size: 60px
+      line-height: 76px
+      margin-top: 90px
+      margin-bottom: 70px
+    .main_wrapper
+      border-radius: 47px
+      padding: 50px 70px 70px 70px
+      .main-title
+        margin-bottom: 80px
+        font-size: 32px
+        line-height: 41px
+      .list
+        counter-reset: list
+        .gallery.column
+          flex-direction: row
+          .img
+            height: 255px
+            width: calc(100% / 3 - 30px)
+            margin-bottom: 0px
+        .gallery.rov
+          flex-wrap: nowrap          
+          .img
+            margin-bottom: 0px 
+            &:nth-child(1), &:nth-child(2)
+              height: 255px
+              width: calc(100% / 3 - 30px)
+            &:nth-child(3)
+              width: calc(100% / 3 - 30px)
+              height: 255px
+        .gallery
+          margin-bottom: 80px
+          .img
+            border-radius: 47.085px
+            height: 255px
+            width: calc(100% / 3 - 30px)
+        .item
+          padding-left: 90px
+          &::before
+            left: 0
+            top: -10px
+            height: 56px
+            width: 56px
+          .title
+            margin-bottom: 18px
+            font-size: 24px
+            line-height: 31px
+            span
+              padding-left: 15px
+              font-size: 10px
+              line-height: 13px
+          p
+            margin-bottom: 80px
+            font-size: 16px
+            line-height: 22px
+            width: 60%
+  .case_page
+    .title
+      font-size: 60px
+      line-height: 77px
+      margin-top: 90px
+      margin-bottom: 18px
+      svg
+        margin-left: 22px
+    .subtitle
+      font-size: 12px
+      line-height: 15px
+      span
+        display: inline-block
+        margin-right: 14px
+  .single-case_page
+    padding: 100px 0 100px 0
+    .main-tag
+      padding: 20px
+    .line-info
+      margin-top: 20px
+    .name
+      font-size: 60px
+      line-height: 77px
+    .info
+      font-size: 32px
+      line-height: 41px
+    .section
+      margin-top: 70px
+      .img-ovf
+        border-radius: 47px
+        margin-bottom: 20px
+        max-height: none
+        height: auto
+      img
+        border-radius: 47px
+        height: 100%
+      .about-brand
+        justify-content: space-between
+        align-items: center
+        margin: 130px 0
+        flex-direction: row
+        .title
+          font-size: 32px
+          line-height: 41px
+          margin-bottom: 0px
+        p
+          font-size: 16px
+          line-height: 22px
+          width: 60%
+  .wrapper_404
+    height: 100vh
+    .first-svg
+      bottom: -75px
+      left: -55px
+    .second-svg
+      top: -40px
+      right: -20px
+    .third-svg
+      top: 78px
+      right: -44px
+    .title
+      font-size: 149.577px
+      line-height: 191px
+  .contact
+    height: 100vh
+    .page-title
+      margin-top: 0px
+      font-size: 48px
+      line-height: 61px
+      svg
+        margin-left: 25px
+    .subtitle
+      margin-top: 0px
+      font-size: 21px
+      line-height: 27px
+      margin-bottom: 0px
+    .contact_wrapper
+      flex-direction: row
+      gap: 20px
+      .phone
+        width: 37%
+        padding: 35px
+        span
+          margin-bottom: 11px
+          font-size: 16px
+          line-height: 20px
+        a
+          font-size: 28px
+          line-height: 36px
+      .mail
+        width: 37%
+        padding: 35px
+        span
+          margin-bottom: 11px
+          font-size: 16px
+          line-height: 20px
+        a
+          font-size: 28px
+          line-height: 36px
+      .social
+        gap: 0px
+        margin-bottom: 0px
+        a
+          padding: 7px 7px 7px 31px
+          gap: 39px
+          font-size: 21px
+          line-height: 27px
+  .taplink_wrapper
+    min-height: 100vh
+    padding: 40px 0
+    .buttons
+      .button-first, .button-second
+        font-size: 21px
+        line-height: 27px
+
++media-breakpoint-up(xl)
+  main, .layer
+    >section
+      padding: 0 60px
+  .top-line
+    padding-top: 40px
+  .service_wrapper
+    .service_wrapper__content
+      .swiper_servs
+        margin-bottom: 0px
+  .button
+    font-size: 0.7vw
+    line-height: 0.9vw
+    padding: 1.2vw 1.8vw
+  footer
+    margin-top: 0px
+    padding-bottom: 38px
+    svg.logo
+      width: 100%
+      path
+        fill: white
+    .big-button
+      margin-bottom: 68px
+      height: 113px
+      font-size: 14px
+      line-height: 18px
+    .rights
+      margin-top: 150px
+      font-size: 9px
+      line-height: 12px
+      margin-right: 60px
+    .link
+      text-align: left
+      font-size: 12px
+      margin-top: 150px
+      margin-left: 55px
+      line-height: 15px
+  .service_page_calc
+    mask-image: url(../images/dist/calc_layer.svg)
+    mask-repeat: round
+    .top
+      display: block
+    .section-title
+      margin-left: -30px
+    .service_page_calc__wrapper
+      padding-bottom: 100px
+      .title
+        margin-top: 90px
+        font-size: 60px
+        line-height: 76px
+        svg
+          margin-left: 30px
+      .calc_form.full
+        .block
+          height: calc(100% - 20px)
+      .calc_form
+        h3.title
+          font-size: 16px
+          line-height: 20px
+          margin-bottom: 20px
+          margin-top: 44px
+        .main_serv
+          gap: 20px
+          .block
+            padding: 50px 30px
+            flex-basis: 70%
+        .total
+          min-height: 230px
+          padding: 35px
+          flex-basis: 30%
+          max-width: 30%
+          .price
+            font-size: 46px
+            line-height: 59px
+            bdi
+              font-size: 25px
+              line-height: 32px
+          .button
+            font-size: 11px
+            line-height: 14px
+          span
+            font-size: 12px
+            line-height: 15px
+        .block
+          padding: 30px 36px
+          margin-bottom: 20px
+          .block-title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 23px
+          .line
+            padding-left: 40px
+            margin-bottom: 8px
+            .input
+              height: 13px
+              width: 13px
+            label
+              gap: 16px
+              .name
+                font-size: 12px
+                line-height: 15px
+            .price
+              font-size: 16px
+              line-height: 20px
+              bdi
+                font-size: 12px
+                line-height: 15px
+        .block.main
+          .line
+            width: 100%
+            margin-bottom: 40px
+            label
+              // flex-basis: auto
+              gap: 12px
+              input
+                width: 20px
+                height: 20px
+              .name
+                font-size: 21px
+                line-height: 27px
+              span
+                font-size: 11px
+                line-height: 14px
+            .price
+              font-size: 24px
+              line-height: 31px
+              bdi
+                font-size: 16px
+                line-height: 20px
+
+@media (min-width: 1490px)
+  .case_wrapper
+    .case_wrapper__content
+      .navs
+        .category
+          nav
+            ul
+              gap: 0
+              flex-wrap: nowrap
+  .service_page_calc
+    .service_page_calc__wrapper
+      .calc_form
+        .block.main
+            label
+              flex-basis: auto
+
+@media (min-width: 1600px)
+  .hero
+    padding-bottom: 50px
+    h1.main-title
+      font-size: 6vw
+      line-height: 7vw
+      span
+        font-size: 0.8vw
+        line-height: 1vw

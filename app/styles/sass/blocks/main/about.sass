@@ -1,0 +1,90 @@
+.about_wrapper
+  mask-image: url(../images/dist/about_layer.svg)
+  background: white
+  position: relative
+  mask-repeat: round
+  padding-bottom: 40px
+  .top
+    position: absolute
+    bottom: 0
+    right: 70px
+  .about_wrapper__content
+    height: 100vh
+    .wrapper-title
+      margin-bottom: 50px
+      font-weight: 500
+      font-size: 64px
+      line-height: 70px
+      position: relative
+      svg
+        position: absolute
+    p
+      margin-bottom: 70px
+      font-weight: 400
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.05em
+      width: 60%
+    .button-dark
+      margin-right: 15px
+  .composition
+    display: flex
+    align-items: center
+    gap: 20px
+    position: relative
+    .one, .two
+      position: absolute
+    .one
+      bottom: -15%
+      left: 25%
+    .two
+      right: -50px
+      top: 30%
+    .column
+      display: flex
+      width: 50%
+      flex-direction: column
+      gap: 24px 0
+      .block
+        border-radius: 34.31px
+        overflow: hidden
+        img
+          margin-bottom: 11px
+        .title
+          font-weight: 500
+          font-size: 12px
+          line-height: 15px
+          margin-bottom: 11px
+          text-transform: uppercase
+        .subtitle
+          font-weight: 400
+          font-size: 12px
+          width: 80%
+          line-height: 15px
+      .first-block
+        background: #8854F6
+        padding: 30px 24px
+        color: white
+        background-image: url(../images/dist/about_first_bg.png)
+        background-repeat: no-repeat
+        background-size: cover
+      .second-block
+        padding: 22px
+        color: #8854F6
+        border: 2px solid #8854F6
+      .third-block
+        color: #8854F6
+        padding: 22px
+        background: #C7FF4F
+        width: 90%
+        img
+          width: 60%
+      .fourth-block
+        background-image: url(../images/dist/about_fourth_bg.png)
+        background-repeat: no-repeat
+        background-size: contain
+        padding: 20px
+        background-color: #141414
+        color: white
+        img
+          width: 100%

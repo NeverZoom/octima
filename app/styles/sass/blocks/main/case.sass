@@ -1,0 +1,210 @@
+.case_wrapper
+  mask-image: url(../images/dist/case_layer.svg)
+  background: $textcolor
+  mask-repeat: round
+  // mask-size: contain
+  color: white
+  min-height: 100vh
+  padding-bottom: 40px
+  position: relative
+  .top
+    position: absolute
+    bottom: 40px
+    right: 70px
+  .button-outline
+    margin-top: 96px
+    color: white
+    border: 1px solid white
+    transition: all 0.3s ease
+    &:hover
+      background: white
+      color: $textcolor
+  .case_wrapper__content
+    padding-top: 80px
+    .navs
+      margin-bottom: 85px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .category
+        nav
+          ul
+            padding: 0
+            margin: 0
+            list-style: none
+            display: flex
+            li
+              a.active
+                color: $textcolor
+                background: #C7FF4F
+                border-color: #C7FF4F
+              a
+                margin-right: 12px
+                font-weight: 500
+                display: block
+                font-size: 11px
+                line-height: 14px
+                letter-spacing: 0.12em
+                text-transform: uppercase
+                color: #FFFFFF
+                padding: 16px 25px
+                text-decoration: none
+                border: 2px solid #FFFFFF
+                border-radius: 28px
+                transition: all 0.3s ease
+                &:hover
+                  color: $textcolor
+                  background: #C7FF4F
+                  border-color: #C7FF4F
+      .view
+        display: flex
+        gap: 10px
+        .active
+          svg
+            rect
+              fill: #C7FF4F
+        .grid, .list
+          svg
+            transition: all 0.3s ease
+            rect
+              transition: all 0.3s ease
+            &:hover
+              cursor: pointer
+              rect
+                fill: #C7FF4F
+  .case_show_wrapper
+    .case_show_wrapper_item
+      display: none
+    .case_show_wrapper_item.active
+      display: block
+      .first_list.active
+        .two, .three, .five, .six
+          transition: all 0.3s ease
+          height: auto
+      .first_list
+        .two, .three, .five, .six
+          transition: all 0.3s ease
+          height: 0
+          overflow: hidden
+        .block
+          background: none !important
+          display: flex
+          justify-content: space-between
+          height: auto
+          .show, svg, p
+            display: none
+          .tags
+            display: flex
+            gap: 10px
+            margin-bottom: 45px
+            .item
+              padding: 10px 20px
+              font-weight: 400
+              font-size: 14px
+              line-height: 18px
+              letter-spacing: 0.1em
+              color: #FBFBFB
+              background: #545454
+              border-radius: 28px
+          .title
+            margin-bottom: 7px
+            font-weight: 500
+            font-size: 36px
+            line-height: 46px
+            letter-spacing: 0.02em
+            margin-top: 0
+            color: #FFFFFF
+          .info
+            margin-bottom: 45px
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+          .image
+            margin-bottom: 100px
+          .link
+            padding: 23px 27px
+            border: 2px solid #FFFFFF
+            border-radius: 47.4783px
+            display: inline-block
+            transition: all 0.3s ease
+            &:hover
+              svg
+                path
+                  transform: translateX(-5px)
+            svg
+              display: flex !important
+              path
+                transition: all 0.3s ease
+      .first_grid
+        min-height: 800px
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+        grid-auto-columns: 1fr
+        gap: 20px 20px
+        grid-auto-flow: row
+        grid-template-areas: "one one one two two two five five five five" "one one one two two two five five five five" "four four four two two two six six six six" "four four four two two two six six six six" "four four four three three three six six six six" "four four four three three three six six six six"
+        .block
+          background-position: center
+          margin-bottom: 0px
+          border-radius: 47px
+          background-size: cover
+          display: flex
+          flex-direction: column
+          justify-content: center
+          width: 100%
+          padding: 30px
+          height: 100%
+          position: relative
+          .tags, .title, .info, .image, .link
+            display: none
+          a.show
+            position: absolute
+            bottom: 15px
+            transition: all 0.3s ease
+            &:hover
+              transform: rotate(-90deg)
+          svg
+            display: block
+            margin: 0 auto
+            width: 100%
+          p
+            width: 60%
+            margin-top: 30px
+            margin-bottom: 0
+            font-weight: 400
+            font-size: 13.884px
+            line-height: 18px
+            color: #FFFFFF
+
+  .one
+    grid-area: one
+    a
+      right: 15px
+  .four
+    grid-area: four
+    a
+      left: 15px
+  .two
+    grid-area: two
+    a
+      left: 15px
+  .three
+    grid-area: three
+    a
+      right: 15px
+  .five
+    grid-area: five
+    a
+      right: 15px
+  .six
+    grid-area: six
+    a
+      left: 15px
+
+
+
+
+

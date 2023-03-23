@@ -1,0 +1,57 @@
+.wrapper_404
+  height: 100vh
+  .container-fluid
+    height: 100%
+    .row  
+      height: 100%
+      .col-xl-4
+        position: relative
+  .first-svg,.second-svg,.third-svg
+    position: absolute
+  .first-svg
+    bottom: -75px
+    left: -55px
+  .second-svg
+    top: -40px
+    right: -20px
+  .third-svg
+    top: 78px
+    right: -44px
+  .title
+    font-weight: 500
+    font-size: 149.577px
+    line-height: 191px
+    display: flex
+    align-items: center
+    letter-spacing: 0.055em
+    color: #8854F6
+  .subtitle
+    font-weight: 500
+    font-size: 12px
+    text-align: center
+    line-height: 15px
+    display: flex
+    align-items: center
+    letter-spacing: 0.02em
+  .link
+    width: 90%
+    display: flex
+    margin-top: 27px
+    justify-content: space-between
+    align-items: center
+    padding: 7px 7px 7px 31px
+    background: #FFFFFF
+    border: 2px solid #000000
+    border-radius: 28px
+    font-weight: 500
+    font-size: 21px
+    color: $textcolor
+    text-decoration: none
+    line-height: 27px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    svg
+      transition: all 0.3s ease
+    &:hover
+      svg
+        transform: rotate(-90deg)

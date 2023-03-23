@@ -1,0 +1,67 @@
+.case_page
+  .title
+    font-weight: 500
+    font-size: 60px
+    line-height: 77px
+    letter-spacing: 0.04em
+    margin-top: 90px
+    margin-bottom: 18px
+    svg
+      margin-left: 22px
+  .subtitle
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.1em
+    text-transform: lowercase
+    color: #676767
+    span
+      margin-right: 14px
+  .top-line
+    nav ul li a
+      color: $textcolor
+      &:hover
+        color: #8854F6
+    .button-header
+      background: $textcolor
+      color: white
+    .burger
+      rect
+        fill: $textcolor
+    .logo
+      svg
+        path
+          fill: $textcolor
+  .case_wrapper
+    background: none
+    color: $textcolor
+    mask-image: none
+    .case_wrapper__content .navs .category nav ul li a
+      border: 2px solid $textcolor
+      border-radius: 28px
+      color: $textcolor
+    .case_wrapper__content .navs .category nav ul li a.active
+      background: #8854F6
+      border-color: #8854F6
+      color: white
+    .case_wrapper__content .navs .category nav ul li a:hover
+      background: #8854F6
+      border-color: #8854F6
+      color: white
+    .case_wrapper__content .navs .view 
+      .grid, .list 
+        svg
+          &:hover 
+            rect
+              fill: #8854F6
+    .case_wrapper__content .navs .view .active svg rect
+      fill: #8854F6
+    .case_show_wrapper .case_show_wrapper_item.active .first_list .block .tags .item
+      background: #BFBFBF
+    .case_show_wrapper .case_show_wrapper_item.active .first_list .block .info, .case_show_wrapper .case_show_wrapper_item.active .first_list .block .title
+      color: $textcolor
+    .case_show_wrapper .case_show_wrapper_item.active .first_list .block .link
+      border: 2px solid $textcolor
+      svg
+        path
+          fill: $textcolor

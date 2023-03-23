@@ -1,0 +1,107 @@
+.contact
+  height: 100vh
+  // min-height: 1000px
+  position: relative
+  .container-fluid
+    height: 100%
+    .row
+      height: 70%
+  #myVideo
+    position: absolute
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    z-index: 1
+  .page-title
+    font-weight: 500
+    font-size: 48px
+    line-height: 61px
+    letter-spacing: 0.05em
+    color: #FFFFFF
+    position: relative
+    z-index: 2
+    svg
+      margin-left: 25px
+  .subtitle
+    position: relative
+    z-index: 2
+    font-weight: 400
+    font-size: 21px
+    line-height: 27px
+    letter-spacing: 0.07em
+    color: #BFBFBF
+  .contact_wrapper
+    position: relative
+    z-index: 2
+    display: flex
+    gap: 20px
+    .phone
+      width: 37%
+      padding: 35px
+      border-radius: 28px
+      background: linear-gradient(244.2deg, #C7FF4F 4.59%, #E6FFB1 46.92%, #C7FF4F 88.39%)
+      color: $textcolor
+      span
+        margin-bottom: 11px
+        display: block
+        font-weight: 400
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.05em
+        text-transform: capitalize
+      a
+        text-decoration: none
+        font-weight: 500
+        font-size: 28px
+        line-height: 36px
+        text-transform: uppercase
+        color: $textcolor
+        display: block
+    .mail
+      width: 37%
+      padding: 35px
+      background: #8854F6
+      color: white
+      border-radius: 28px
+      span
+        margin-bottom: 11px
+        display: block
+        font-weight: 400
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.05em
+        text-transform: capitalize
+      a
+        text-decoration: none
+        font-weight: 500
+        font-size: 28px
+        line-height: 36px
+        text-transform: uppercase
+        color: white
+        display: block
+    .social
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      a
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: 7px 7px 7px 31px
+        gap: 39px
+        background: #FFFFFF
+        border-radius: 28px
+        font-weight: 500
+        font-size: 21px
+        line-height: 27px
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        color: $textcolor
+        text-decoration: none
+        svg
+          transition: all 0.3s ease
+        &:hover
+          svg
+            transform: rotate(-90deg)

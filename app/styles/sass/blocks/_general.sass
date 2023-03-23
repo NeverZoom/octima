@@ -1,0 +1,79 @@
+main, .layer
+  >section
+    padding: 0 60px
+
+.button
+  display: inline-block
+  font-weight: 500
+  font-size: 11px
+  line-height: 14px
+  text-align: center
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  padding: 16px 30px
+  border-radius: 28px
+  text-decoration: none
+  transition: all 0.3s ease
+
+.button-header
+  color: $textcolor
+  background: white
+  &:hover
+    color: $textcolor
+    background: #C0FF3A
+
+.section-title
+  text-align: center
+  margin-top: 20px
+  font-weight: 500
+  font-size: 14px
+  line-height: 18px
+  letter-spacing: 0.05em
+  text-transform: uppercase
+
+.button-dark
+  color: white
+  background: $textcolor
+  &:hover
+    background: #8854F6
+    color: white
+
+.button-outline
+  color: $textcolor
+  border: 1px solid $textcolor
+  &:hover
+    background: $textcolor
+    color: white
+
+.layer
+  // background: $textcolor
+  border-bottom-left-radius: 15px
+  border-bottom-right-radius: 15px
+main
+  background: $textcolor
+  overflow: hidden
+
+
+@keyframes rotating
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+.rotating-10
+  animation: rotating 10s linear infinite
+
+.rotating-20
+  animation: rotating 20s linear infinite
+
+.rotating-5
+  animation: rotating 5s linear infinite
+
+.top
+  svg
+    path
+      transition: all 0.3s ease
+  &:hover
+    svg
+      path
+        transform: translateY(-5px)

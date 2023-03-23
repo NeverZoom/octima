@@ -1,0 +1,105 @@
+.top-line
+  padding-top: 40px
+  position: relative
+  z-index: 2
+  nav
+    ul
+      width: 100%
+      padding: 0
+      margin: 0
+      list-style: none
+      display: flex
+      gap: 0 35px
+      li
+        a.active
+          color: #C7FF4F
+        a
+          font-weight: 500
+          text-decoration: none
+          font-size: 11px
+          line-height: 14px
+          letter-spacing: 0.1em
+          text-transform: uppercase
+          color: #FFFFFF
+          transition: all 0.3s ease
+          &:hover
+            color: #C7FF4F
+          
+
+.lay.active
+  z-index: 998
+  pointer-events: all
+  opacity: 1
+  .mobile-menu
+    width: 65%
+    z-index: 999
+    nav, .close, .rotating-10, .btns
+      opacity: 1
+
+
+.lay
+  transition: all 0.3s ease
+  position: fixed
+  z-index: -1
+  pointer-events: none
+  opacity: 0
+  height: 100vh
+  width: 100%
+  left: 0
+  top: 0
+
+.mobile-menu
+  transition: all 0.3s ease
+  position: fixed
+  z-index: -1
+  height: 100vh
+  width: 0%
+  right: 0
+  top: 0
+  background: white
+  border-radius: 21px 0px 0px 0px
+  padding: 120px 15px 40px 15px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  nav, .close, .rotating-10, .btns
+    opacity: 0
+  nav
+    transition: all 0.2s ease
+    ul
+      width: 100%
+      padding: 0
+      margin: 0
+      list-style: none
+      display: flex
+      flex-direction: column
+      gap: 15px 0
+      li
+        a.active
+          color: #C7FF4F
+        a
+          font-weight: 500
+          text-decoration: none
+          font-size: 15px
+          line-height: 19px
+          letter-spacing: 0.1em
+          text-transform: uppercase
+          color: $textcolor
+          transition: all 0.3s ease
+          &:hover
+            color: #C7FF4F
+  .close
+    transition: all 0.2s ease
+    position: absolute
+    right: 30px
+    top: 30px
+  .rotating-10
+    transition: all 0.2s ease
+    position: absolute
+    left: 20px
+    top: 20px
+  .btns
+    transition: all 0.2s ease
+    display: flex
+    flex-direction: column
+    gap: 20px
