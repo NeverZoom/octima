@@ -5,7 +5,7 @@
   mask-size: cover
   .service_wrapper__content
     padding-bottom: 120px
-    min-height: 150vh
+    min-height: 100vh
     margin-top: 30px
     .wrapper-title
       font-weight: 500
@@ -13,6 +13,7 @@
       line-height: 60px
       letter-spacing: 0.02em
       position: relative
+      margin-bottom: 40px
       svg
         position: absolute
     .wrapper-item.primary
@@ -46,6 +47,7 @@
       display: flex
       flex-direction: column
       justify-content: space-between
+      align-items: center
       padding: 34px 40px 31px 40px
       background: #FFFFFF
       border: 2px solid #8854F6
@@ -97,14 +99,17 @@
             color: #888888
             display: block
       .price
-        font-family: Montserrat
+        font-family: Montserrat, sans-serif
         font-weight: 700
         font-size: 32px
         line-height: 39px
         text-transform: uppercase
+        position: relative
         .price-currency
+          position: absolute
+          top: 0
           display: inline-block
-          font-family: Montserrat
+          font-family: Montserrat, sans-serif
           font-size: 13.2414px
           line-height: 16px
         .price-info
@@ -116,7 +121,7 @@
           text-transform: none
           margin-bottom: 12px
       .last-price
-        font-family: Montserrat
+        font-family: Montserrat, sans-serif
         font-weight: 700
         font-size: 15.0303px
         line-height: 18px
@@ -124,7 +129,7 @@
         text-decoration-line: line-through
         color: #545454
         .last-price-currency
-          font-family: Montserrat
+          font-family: Montserrat, sans-serif
           font-size: 8.29258px
           display: inline-block
           line-height: 10px
@@ -141,6 +146,7 @@
         display: block
         margin: 22px auto 0
         transition: all 0.3s ease
+        width: fit-content
         &:hover
           color: #8854F6
           background: white

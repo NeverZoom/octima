@@ -26,13 +26,16 @@
       display: flex
       justify-content: space-between
       align-items: center
+      gap: 10px
       .category
+        width: 100%
         nav
           ul
             padding: 0
             margin: 0
             list-style: none
             display: flex
+            width: 100%
             li
               a.active
                 color: $textcolor
@@ -100,7 +103,7 @@
             .item
               padding: 10px 20px
               font-weight: 400
-              font-size: 14px
+              font-size: 12px
               line-height: 18px
               letter-spacing: 0.1em
               color: #FBFBFB
@@ -122,13 +125,16 @@
             letter-spacing: 0.05em
             color: #FFFFFF
           .image
-            margin-bottom: 100px
+            width: 30%
+            object-fit: contain
+            object-position: left top
           .link
             padding: 23px 27px
             border: 2px solid #FFFFFF
             border-radius: 47.4783px
             display: inline-block
             transition: all 0.3s ease
+            margin-bottom: 100px
             &:hover
               svg
                 path
@@ -158,6 +164,12 @@
           padding: 30px
           height: 100%
           position: relative
+          overflow: hidden
+          transition: all 4s ease
+          // &:hover
+            // transform: scale(1.1)
+            // svg
+              // transform: scale(0.9)
           .tags, .title, .info, .image, .link
             display: none
           a.show
@@ -167,6 +179,7 @@
             &:hover
               transform: rotate(-90deg)
           svg
+            transition: all 4s ease
             display: block
             margin: 0 auto
             width: 100%

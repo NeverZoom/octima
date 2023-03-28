@@ -590,7 +590,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				},
 				// when window width is >= 640px
 				425: {
-					slidesPerView: 1.3,
+					slidesPerView: 1.25,
 				},
 				550: {
 					slidesPerView: 1.5,

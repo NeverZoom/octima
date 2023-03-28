@@ -2,19 +2,22 @@
   background: $textcolor
   height: 100vh
   color: white
+  display: flex
+  align-items: center
+  justify-content: center
   .container-fluid
     height: 100%
     .row  
       height: 100%
   .logo
-    width: 100%
-    margin-bottom: 80px
+    width: 80%
+    margin: 0 auto 60px auto
   .buttons
     margin-bottom: 25px
     display: flex
     flex-direction: column
     gap: 25px
-    .button-first, .button-second
+    .button-first, .button-second, .button-third
       padding: 7px 7px 7px 31px
       display: flex
       justify-content: space-between
@@ -36,6 +39,9 @@
     .button-second
       background: linear-gradient(269.07deg, #C7FF4F 0%, #D5FF7A 29.94%, #EFFFCC 47.85%, #D8FF85 63.43%, #C7FF4F 97.43%)
       color: $textcolor
+    .button-third
+      background: white
+      color: $textcolor
   span
     font-weight: 400
     font-size: 12px
@@ -44,18 +50,12 @@
     letter-spacing: 0.05em
     color: #FFFFFF
   .hr
-    margin-top: 45px
-    margin-bottom: 54px
+    margin-top: 30px
+    margin-bottom: 55px
     margin-left: auto
     margin-right: auto
-  .button-outline
-    color: white
-    border-color: white
-    margin-bottom: 50px
-    transition: all 0.3s ease
-    &:hover
-      background: white
-      color: $textcolor
+  .button-third
+    margin-bottom: 25px
   .link
     margin-bottom: 9px
     font-weight: 400

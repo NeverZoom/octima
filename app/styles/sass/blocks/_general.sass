@@ -40,7 +40,7 @@ main, .layer
 
 .button-outline
   color: $textcolor
-  border: 1px solid $textcolor
+  border: 2px solid $textcolor
   &:hover
     background: $textcolor
     color: white
@@ -77,3 +77,10 @@ main
     svg
       path
         transform: translateY(-5px)
+
+a.top
+  mix-blend-mode: difference
+  position: fixed
+  right: 70px
+  bottom: 35px
+  z-index: 100

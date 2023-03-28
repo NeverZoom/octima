@@ -37,6 +37,7 @@
     mask-repeat: no-repeat
     mask-size: cover
     .button
+      width: fit-content
       font-size: 2.5vw
       line-height: 2.7vw
       padding: 16px 2.8vw
@@ -62,7 +63,7 @@
         letter-spacing: 0.05em
         width: 100%
       .button-dark
-        margin-right: 15px
+        margin-right: 13px
       .button
         margin-bottom: 40px
     .composition
@@ -183,6 +184,7 @@
             margin-bottom: 0px
             border-radius: 47px
             padding: 15px
+            border-radius: 20px
             a.show
               bottom: 15px
             p
@@ -552,14 +554,14 @@
       font-size: 10vw
       line-height: 10vw
     .info
-      font-size: 4.5vw
-      line-height: 5vw
+      font-size: 3.5vw
+      line-height: 4.5vw
     .section
       margin-top: 50px
       .img-ovf
         border-radius: 20px
         margin-bottom: 15px
-        max-height: 280px
+        max-height: 260px
         height: calc(100% - 15px)
       img
         object-fit: cover
@@ -596,6 +598,8 @@
     min-height: 120vh
     height: auto
     padding-bottom: 60px
+    video
+      opacity: 0
     .page-title
       margin-top: 60px
       font-size: 9vw
@@ -641,8 +645,12 @@
           font-size: 21px
           line-height: 27px
   .taplink_wrapper
+    transform: scale(1)
     height: auto
     padding: 60px 0
+    .logo
+      width: 60%
+      margin: 0 auto 40px auto
     .buttons
       .button-first, .button-second
         font-size: 18px
@@ -660,6 +668,9 @@
         display: none
   .mfp-container
     position: fixed !important
+  a.top
+    display: none
+
 
 +media-breakpoint-up(sm)
   .about_wrapper
@@ -758,6 +769,7 @@
     .about_wrapper__content
       .button
         margin-bottom: 10px
+        width: auto
     .composition
       margin-bottom: 0px
   .case_wrapper
@@ -826,12 +838,12 @@
 +media-breakpoint-up(lg)
   main, .layer
     >section
-      padding: 0 30px
+      padding: 0 25px
   .hero
     padding-bottom: 30px
     h1.main-title
-      font-size: 6vw
-      line-height: 7vw
+      font-size: 4.7vw
+      line-height: 5.7vw
       letter-spacing: 0.05em
       svg
         width: 6vw
@@ -901,7 +913,7 @@
         letter-spacing: 0.05em
         width: 60%
       .button-dark
-        margin-right: 15px
+        margin-right: 13px
     .composition
       margin-bottom: 0px
       gap: 20px
@@ -966,14 +978,15 @@
         .category
           nav
             ul
-              // flex-wrap: nowrap
-              // gap: 0
+              flex-wrap: nowrap
+              gap: 10px
+              width: 100%
               li
                 a
-                  margin-right: 12px
-                  font-size: 11px
+                  margin-right: 0px
+                  font-size: 10px
                   line-height: 14px
-                  padding: 14px 16px
+                  padding: 14px 12px
         .view
           display: flex
           gap: 10px
@@ -985,9 +998,9 @@
               gap: 10px
               margin-bottom: 45px
               .item
-                padding: 10px 20px
-                font-size: 14px
-                line-height: 18px
+                padding: 10px 12px
+                font-size: 12px
+                line-height: 16px
                 border-radius: 28px
             .title
               margin-bottom: 7px
@@ -998,9 +1011,9 @@
               font-size: 16px
               line-height: 22px
             .image
-              margin-bottom: 100px
             .link
               padding: 23px 27px
+              margin-bottom: 100px
         .first_grid
           min-height: 800px
           grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
@@ -1057,7 +1070,7 @@
     mask-repeat: round
     .service_wrapper__content
       padding-bottom: 120px
-      min-height: 150vh
+      min-height: 100vh
       margin-top: 30px
       .swiper-scrollbar.swiper-scrollbar-horizontal
         display: none
@@ -1115,22 +1128,22 @@
   .service_page_wrapper
     padding-bottom: 120px
     .title
-      margin-top: 90px
-      font-size: 60px
-      line-height: 76px
+      margin-top: 20px
+      font-size: 50px
+      line-height: 60px
       margin-bottom: 18px
       svg
         margin-left: 30px
     .subtitle
-      font-size: 16px
-      line-height: 22px
-      margin-bottom: 70px
+      font-size: 14px
+      line-height: 18px
+      margin-bottom: 30px
     .service_items
-      gap: 45px 30px
+      gap: 25px 15px
       .item
         border-radius: 47.085px
-        height: 255px
-        width: calc(100% / 3 - 30px) 
+        height: 230px
+        width: calc(100% / 3 - 15px) 
         img
           right: 35px
           top: 30px
@@ -1162,8 +1175,6 @@
       .sixth
         img
           max-width: 160px
-  .flip-card:hover .flip-card-inner 
-    transform: rotateY(180deg)
   .single-service_wrapper
     padding-bottom: 100px
     .title
@@ -1261,7 +1272,7 @@
       .about-brand
         justify-content: space-between
         align-items: center
-        margin: 130px 0
+        margin: 110px 0 130px 0
         flex-direction: row
         .title
           font-size: 32px
@@ -1286,6 +1297,7 @@
       font-size: 149.577px
       line-height: 191px
   .contact
+    min-height: auto
     height: 100vh
     .page-title
       margin-top: 0px
@@ -1293,11 +1305,13 @@
       line-height: 61px
       svg
         margin-left: 25px
+    video
+      opacity: 1
     .subtitle
       margin-top: 0px
       font-size: 21px
       line-height: 27px
-      margin-bottom: 0px
+      margin-bottom: 80px
     .contact_wrapper
       flex-direction: row
       gap: 20px
@@ -1330,30 +1344,48 @@
           font-size: 21px
           line-height: 27px
   .taplink_wrapper
+    transform: scale(0.9)
     min-height: 100vh
     padding: 40px 0
+    .logo
+      width: 80%
+      margin: 0 auto 60px auto
+    .col-xl-4
+      padding: 0 26px
     .buttons
       .button-first, .button-second
         font-size: 21px
         line-height: 27px
+  a.top
+    display: block
+
 
 +media-breakpoint-up(xl)
   main, .layer
     >section
-      padding: 0 60px
+      padding: 0 30px
   .top-line
     padding-top: 40px
   .service_wrapper
     .service_wrapper__content
       .swiper_servs
         margin-bottom: 0px
+    .button
+      width: max-content !important
   .button
     font-size: 0.7vw
     line-height: 0.9vw
-    padding: 1.2vw 1.8vw
+    padding: 16px 30px
   footer
-    margin-top: 0px
+    // margin-top: 0px
     padding-bottom: 38px
+    .button-outline
+      padding: 18px 16px
+    .morelink
+      margin-left: 12px
+      padding: 18px 8px 18px 18px
+      gap: 10px
+      width: 155px
     svg.logo
       width: 100%
       path
@@ -1385,8 +1417,8 @@
       padding-bottom: 100px
       .title
         margin-top: 90px
-        font-size: 60px
-        line-height: 76px
+        font-size: 50px
+        line-height: 60px
         svg
           margin-left: 30px
       .calc_form.full
@@ -1466,22 +1498,70 @@
               bdi
                 font-size: 16px
                 line-height: 20px
-
-@media (min-width: 1490px)
+  .flip-card:hover .flip-card-inner 
+    transform: rotateY(180deg)
+  .flip-card-back 
+    .button
+      padding: 12px 10px
+      font-size: 9px
+    svg
+      width: 35px
+      height: 35px
   .case_wrapper
     .case_wrapper__content
       .navs
         .category
           nav
             ul
-              gap: 0
+              li
+                a
+                  padding: 14px 8px
+
+
+@media (min-width: 1490px)
+  main, .layer
+    >section
+      padding: 0 60px
+  .case_wrapper
+    .case_wrapper__content
+      .navs
+        .category
+          nav
+            ul
+              gap: 10px
               flex-wrap: nowrap
+              li
+                a
+                  font-size: 11px
+                  padding: 14px 16px
   .service_page_calc
     .service_page_calc__wrapper
       .calc_form
         .block.main
             label
               flex-basis: auto
+  .flip-card-back 
+    .button
+      padding: 16px 20px
+      font-size: 11px
+    svg
+      width: 40px
+      height: 40px
+  .service_page_calc
+    .service_page_calc__wrapper
+      .calc_form
+        .block.main
+          .line
+            label
+              flex-basis: auto
+  .hero
+    h1.main-title
+      font-size: 4.70rem
+      line-height: 6.70rem 
+  footer
+    .morelink
+      margin-left: 22px
+
 
 @media (min-width: 1600px)
   .hero
