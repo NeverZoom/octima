@@ -587,25 +587,32 @@ document.addEventListener('DOMContentLoaded', () => {
 				// when window width is >= 320px
 				320: {
 					slidesPerView: 1.03,
+      		spaceBetween: 10,
 				},
 				// when window width is >= 640px
 				425: {
-					slidesPerView: 1.25,
+					slidesPerView: 1.3,
+      		spaceBetween: 20,
 				},
 				550: {
 					slidesPerView: 1.5,
+      		spaceBetween: 25,
 				},
 				630: {
 					slidesPerView: 1.7,
+      		spaceBetween: 30,
 				},
 				750: {
 					slidesPerView: 2.1,
+      		spaceBetween: 60,
 				},
 				850: {
 					slidesPerView: 2.4,
+      		spaceBetween: 60,
 				},
 				950: {
 					slidesPerView: 2.6,
+      		spaceBetween: 70,
 				}
 				
 			},
@@ -621,5 +628,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	$('.lay').on('click', function() {
 		$('.lay').removeClass('active') ;
 	});
+
+
+	window.addEventListener('scroll', function() {
+		arrowTop.hidden = (pageYOffset < (document.documentElement.clientHeight / 2));
+	});
+
+	arrowTop.onclick = function() {
+		window.scrollTo(pageXOffset, 0);
+	};
 
 })

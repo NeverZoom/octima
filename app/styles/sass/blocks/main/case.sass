@@ -14,7 +14,7 @@
   .button-outline
     margin-top: 96px
     color: white
-    border: 1px solid white
+    border: 2px solid white
     transition: all 0.3s ease
     &:hover
       background: white
@@ -94,7 +94,7 @@
           display: flex
           justify-content: space-between
           height: auto
-          .show, svg, p
+          .show, svg, p, .main-image
             display: none
           .tags
             display: flex
@@ -166,18 +166,38 @@
           position: relative
           overflow: hidden
           transition: all 4s ease
-          // &:hover
+          .main-image
+            display: block
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: all 4s ease
+          &:hover
+            cursor: pointer
+            .main-image
+              transform: scale(1.1)
+            a.show
+              transform: rotate(-90deg)
+
             // transform: scale(1.1)
             // svg
               // transform: scale(0.9)
           .tags, .title, .info, .image, .link
             display: none
           a.show
+            z-index: 2
             position: absolute
             bottom: 15px
+            // left: 15px
+            width: 80px
             transition: all 0.3s ease
             &:hover
               transform: rotate(-90deg)
+            svg
+              width: 80px !important
           svg
             transition: all 4s ease
             display: block
