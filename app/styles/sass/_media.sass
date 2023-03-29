@@ -144,9 +144,9 @@
               li
                 a
                   margin-right: 0px
-                  font-size: 2.4vw
+                  font-size: 2.1vw
                   line-height: 2.4vw
-                  padding: 16px 3.1vw
+                  padding: 16px 16px
         .view
           display: none
           gap: 10px
@@ -666,6 +666,12 @@
     position: fixed !important
   a.top
     display: none
+  .case_wrapper
+    .case_show_wrapper
+      .case_show_wrapper_item.active
+        .first_grid
+          .one, .four, .two, .three, .five, .six
+            border-radius: 20px
 
 
 +media-breakpoint-up(sm)
@@ -857,7 +863,7 @@
         max-width: 100%
         position: absolute
         font-size: 11px
-        line-height: 15px
+        line-height: 19px
         letter-spacing: 0.03em
         &:nth-child(1)
           right: 0
@@ -1089,7 +1095,7 @@
           margin-bottom: 22px
           .item
             font-size: 11.0229px
-            line-height: 10px
+            line-height: 11px
             padding: 6px 13px
         .title
           font-size: 32px
@@ -1365,7 +1371,12 @@
   .top-line
     .icon-link,nav,.button
       transform: scale(0.9)
-
+  .case_wrapper
+    .case_show_wrapper
+      .case_show_wrapper_item.active
+        .first_grid
+          .one, .four, .two, .three, .five, .six
+            border-radius: 47px
 
 +media-breakpoint-up(xl)
   main, .layer
@@ -1403,14 +1414,14 @@
       font-size: 14px
       line-height: 18px
     .rights
-      margin-top: 150px
+      margin-top: 170px
       font-size: 9px
       line-height: 12px
       margin-right: 60px
     .link
       text-align: left
       font-size: 12px
-      margin-top: 150px
+      margin-top: 170px
       margin-left: 55px
       line-height: 15px
   .service_page_calc
@@ -1506,7 +1517,7 @@
                 font-size: 16px
                 line-height: 20px
   .flip-card:hover .flip-card-inner 
-    transform: rotateY(180deg)
+    // transform: rotateY(180deg)
   .flip-card-back 
     .button
       padding: 12px 10px
@@ -1570,7 +1581,7 @@
       margin-left: 22px
   .top-line
     .icon-link,nav,.button
-      transform: scale(1)
+      // transform: scale(1)
 
 @media (min-width: 1600px)
   .hero
