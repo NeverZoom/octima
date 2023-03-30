@@ -5,14 +5,14 @@
   .hero
     padding-bottom: 70px
     h1.main-title
-      font-size: 7.5vw
-      line-height: 9vw
+      font-size: 5.9vw
+      line-height: 7vw
       svg
-        width: 7vw
-        height: 7vw
+        width: 5.9vw
+        height: 5.9vw
       span
         display: block
-        max-width: 290px
+        max-width: 315px
         position: relative
         font-size: 12px
         line-height: 15px
@@ -123,7 +123,7 @@
     mask-repeat: no-repeat
     mask-size: cover
     min-height: 100vh
-    padding-bottom: 40px
+    padding-bottom: 70px
     .top
       display: none
     .button-outline
@@ -142,11 +142,16 @@
               flex-wrap: wrap
               gap: 15px 6px
               li
+                &:first-child
+                  width: 100%
+                  a
+                    width: fit-content
+              li
                 a
                   margin-right: 0px
-                  font-size: 2.1vw
+                  font-size: 1.8vw
                   line-height: 2.4vw
-                  padding: 16px 16px
+                  padding: 15px 15px
         .view
           display: none
           gap: 10px
@@ -228,6 +233,8 @@
     margin-top: -11px
     mask-image: url(../images/dist/about_layer_mobile.svg)
     mask-repeat: no-repeat
+    .button
+      padding: 16px 31px
     .swiper-scrollbar.swiper-scrollbar-horizontal
       display: block
     .service_wrapper__content
@@ -310,8 +317,8 @@
       text-align: right
       display: block
       margin-top: 0px
-      font-size: 12px
-      line-height: 15px
+      font-size: 9px
+      line-height: 12px
       margin-left: 0px
   .service_page_wrapper
     padding-bottom: 120px
@@ -325,8 +332,8 @@
         width: 9vw
         height: 9vw
     .subtitle
-      font-size: 3.5vw
-      line-height: 4.5vw
+      font-size: 13px
+      line-height: 17px
       margin-bottom: 50px
     .service_items
       gap: 15px 7px
@@ -395,7 +402,7 @@
         .main_serv
           gap: 0px
           .block
-            padding: 30px 18px
+            padding: 20px 14px
             flex-basis: 100%
         .total
           min-height: 230px
@@ -443,25 +450,32 @@
             width: 100%
             margin-bottom: 30px
             label
-              flex-basis: 65%
+              flex-basis: 70%
               gap: 8px
               input
                 width: 14px
                 height: 14px
+                &::before
+                  content: ''
+                  display: block
+                  height: 14px
+                  width: 14px
+                  background: none
               .name
                 font-size: 14px
                 line-height: 18px
               span
-                font-size: 11px
+                font-size: 12px
                 line-height: 14px
             .price
-              font-size: 20px
+              font-size: 17px
               line-height: 25px
               bdi
                 font-size: 12px
                 line-height: 16px
-  .flip-card:hover .flip-card-inner 
-    transform: none
+  .flip-card-back
+    &:hover
+      opacity: 0
   .single-service_wrapper
     padding-bottom: 80px
     .title
@@ -556,7 +570,7 @@
       margin-top: 50px
       .img-ovf
         border-radius: 20px
-        margin-bottom: 15px
+        margin-bottom: 8px
         max-height: 240px
         height: calc(100% - 15px)
       img
@@ -573,8 +587,8 @@
           line-height: 30px
           margin-bottom: 15px
         p
-          font-size: 14px
-          line-height: 22px
+          font-size: 12px
+          line-height: 18px
           width: 100%
   .wrapper_404
     height: 100vh
@@ -598,14 +612,14 @@
       opacity: 0
     .page-title
       margin-top: 60px
-      font-size: 9vw
+      font-size: 8vw
       line-height: 10vw
       svg
         width: 9vw
         height: 9vw
         margin-left: 0px
     .subtitle
-      font-size: 14px
+      font-size: 13px
       line-height: 17px
       margin-top: 15px
       margin-bottom: 60px
@@ -691,11 +705,16 @@
           nav
             ul
               li
+                &:first-child
+                  width: auto
+              li
                 a
                   font-size: 1.7vw
                   line-height: 1.9vw
                   padding: 1.9vw 2.8vw
   .service_wrapper
+    .button
+      padding: 1.9vw 2.8vw
     .service_wrapper__content
       .wrapper-title
         font-size: 5vw
@@ -1078,6 +1097,8 @@
     margin-top: 0px
     mask-image: url(../images/dist/about_layer.svg)
     mask-repeat: round
+    .button
+      padding: 16px 31px
     .service_wrapper__content
       padding-bottom: 120px
       min-height: 100vh
@@ -1147,7 +1168,7 @@
     .subtitle
       font-size: 14px
       line-height: 18px
-      margin-bottom: 50px
+      margin-bottom: 0px
     .service_items
       gap: 25px 15px
       .item
