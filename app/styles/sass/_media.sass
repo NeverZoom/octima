@@ -5,17 +5,17 @@
   .hero
     padding-bottom: 70px
     h1.main-title
-      font-size: 5.9vw
+      font-size: 6.1vw
       line-height: 7vw
       svg
         width: 5.9vw
         height: 5.9vw
       span
         display: block
-        max-width: 315px
+        max-width: 320px
         position: relative
-        font-size: 12px
-        line-height: 15px
+        font-size: 2.1vw
+        line-height: 180%
         letter-spacing: 0.03em
         &:nth-child(1)
           right: auto
@@ -140,7 +140,7 @@
           nav
             ul
               flex-wrap: wrap
-              gap: 15px 6px
+              gap: 13px 4px
               li
                 &:first-child
                   width: 100%
@@ -149,9 +149,9 @@
               li
                 a
                   margin-right: 0px
-                  font-size: 1.8vw
-                  line-height: 2.4vw
-                  padding: 15px 15px
+                  font-size: 7px
+                  line-height: 9px
+                  padding: 12px 16px
         .view
           display: none
           gap: 10px
@@ -233,8 +233,9 @@
     margin-top: -11px
     mask-image: url(../images/dist/about_layer_mobile.svg)
     mask-repeat: no-repeat
-    .button
+    .button-dark
       padding: 16px 31px
+      min-width: 240px
     .swiper-scrollbar.swiper-scrollbar-horizontal
       display: block
     .service_wrapper__content
@@ -248,7 +249,7 @@
           width: 9vw
           height: 9vw
       .swiper_servs
-        margin-bottom: 90px
+        margin-bottom: 100px
       .wrapper-item
         padding: 34px 40px 31px 40px
         width: calc( 100% / 3 - 40px)
@@ -525,9 +526,10 @@
             top: -5px
             height: 36px
             width: 36px
+            font-size: 20px
           .title
             margin-bottom: 16px
-            font-size: 14px
+            font-size: 12px
             line-height: 18px
             span
               padding-left: 15px
@@ -535,7 +537,7 @@
               line-height: 13px
           p
             margin-bottom: 40px
-            font-size: 12px
+            font-size: 10px
             line-height: 18px
             width: 100%
   .case_page
@@ -659,7 +661,7 @@
     height: auto
     padding: 60px 0
     .logo
-      width: 60%
+      width: 50%
       margin: 0 auto 80px auto
     .buttons
       .button-first, .button-second
@@ -686,7 +688,8 @@
         .first_grid
           .one, .four, .two, .three, .five, .six
             border-radius: 20px
-
+  .pr-0
+    padding-right: 0
 
 +media-breakpoint-up(sm)
   .about_wrapper
@@ -780,6 +783,12 @@
           padding: 16px 31px
           font-size: 11px
           line-height: 14px
+  .hero
+    h1.main-title
+      span
+        max-width: 320px
+        font-size: 12px
+        line-height: 150%
 
 
 +media-breakpoint-up(md)
@@ -937,10 +946,10 @@
           height: 4vw
       p
         margin-bottom: 70px
-        font-size: 16px
-        line-height: 20px
+        font-size: 14px
+        line-height: 18px
         letter-spacing: 0.05em
-        width: 60%
+        width: 70%
       .button-dark
         margin-right: 13px
     .composition
@@ -1013,7 +1022,7 @@
               li
                 a
                   margin-right: 0px
-                  font-size: 10px
+                  font-size: 9px
                   line-height: 14px
                   padding: 14px 12px
         .view
@@ -1097,8 +1106,9 @@
     margin-top: 0px
     mask-image: url(../images/dist/about_layer.svg)
     mask-repeat: round
-    .button
+    .button-dark
       padding: 16px 31px
+      min-width: auto
     .service_wrapper__content
       padding-bottom: 120px
       min-height: 100vh
@@ -1108,6 +1118,9 @@
       .wrapper-title
         font-size: 55px
         line-height: 60px
+        span
+          svg
+            margin-left: 20px
       .wrapper-item
         padding: 34px 40px 31px 40px
         width: calc( 100% / 3 - 40px)
@@ -1218,8 +1231,8 @@
       padding: 50px 70px 70px 70px
       .main-title
         margin-bottom: 80px
-        font-size: 32px
-        line-height: 41px
+        font-size: 24px
+        line-height: 150%
       .list
         counter-reset: list
         .gallery.column
@@ -1251,6 +1264,7 @@
             top: -10px
             height: 56px
             width: 56px
+            font-size: 24px
           .title
             margin-bottom: 18px
             font-size: 24px
@@ -1263,7 +1277,7 @@
             margin-bottom: 80px
             font-size: 16px
             line-height: 22px
-            width: 60%
+            width: 80%
   .case_page
     .title
       font-size: 60px
@@ -1271,7 +1285,7 @@
       margin-top: 90px
       margin-bottom: 18px
       svg
-        margin-left: 22px
+        margin-left: 0px
     .subtitle
       font-size: 12px
       line-height: 15px
@@ -1297,6 +1311,7 @@
         margin-bottom: 20px
         max-height: none
         height: auto
+        height: calc(100% - 20px)
       img
         border-radius: 47px
         height: 100%
@@ -1306,12 +1321,12 @@
         margin: 110px 0 130px 0
         flex-direction: row
         .title
-          font-size: 32px
-          line-height: 41px
+          font-size: 26px
+          line-height: 32px
           margin-bottom: 0px
         p
-          font-size: 16px
-          line-height: 22px
+          font-size: 14px
+          line-height: 18px
           width: 60%
   .wrapper_404
     height: 100vh
@@ -1332,15 +1347,16 @@
     height: calc(100vh + 24px)
     .page-title
       margin-top: 0px
+      margin-bottom: 10px
       font-size: 48px
       line-height: 61px
       svg
-        margin-left: 25px
+        margin-left: 0vw
     video
       opacity: 1
     .subtitle
       margin-top: 0px
-      font-size: 21px
+      font-size: 19px
       line-height: 27px
       margin-bottom: 80px
     .contact_wrapper
@@ -1398,6 +1414,18 @@
         .first_grid
           .one, .four, .two, .three, .five, .six
             border-radius: 47px
+  .pr-0
+    padding-right: calc(var(--bs-gutter-x)*.5)
+  .single-case_page
+    .section
+      .tag-cloud
+        .title
+          margin-bottom: 10px
+        .tags
+          .item
+            font-size: 12px
+            line-height: 16px
+            padding: 10px 10px
 
 +media-breakpoint-up(xl)
   main, .layer
@@ -1435,14 +1463,14 @@
       font-size: 14px
       line-height: 18px
     .rights
-      margin-top: 170px
+      // margin-top: 170px
       font-size: 9px
       line-height: 12px
       margin-right: 60px
     .link
       text-align: left
       font-size: 12px
-      margin-top: 170px
+      // margin-top: 170px
       margin-left: 55px
       line-height: 15px
   .service_page_calc
@@ -1459,7 +1487,7 @@
         font-size: 50px
         line-height: 60px
         svg
-          margin-left: 30px
+          margin-left: 0px
       .calc_form.full
         .block
           height: calc(100% - 20px)
@@ -1526,10 +1554,10 @@
                 width: 20px
                 height: 20px
               .name
-                font-size: 21px
-                line-height: 27px
+                font-size: 17px
+                line-height: 26px
               span
-                font-size: 11px
+                font-size: 10px
                 line-height: 14px
             .price
               font-size: 24px
@@ -1537,8 +1565,9 @@
               bdi
                 font-size: 16px
                 line-height: 20px
-  .flip-card:hover .flip-card-inner 
-    // transform: rotateY(180deg)
+  .flip-card-back
+    &:hover
+      opacity: 1
   .flip-card-back 
     .button
       padding: 12px 10px
@@ -1554,8 +1583,17 @@
             ul
               li
                 a
-                  padding: 14px 8px
-
+                  padding: 14px 14px
+  .single-case_page
+    .section
+      .tag-cloud
+        .title
+          margin-bottom: 10px
+        .tags
+          .item
+            font-size: 10px
+            line-height: 12px
+            padding: 8px 8px
 
 @media (min-width: 1490px)
   main, .layer
@@ -1603,6 +1641,44 @@
   .top-line
     .icon-link,nav,.button
       // transform: scale(1)
+  .about_wrapper
+    .about_wrapper__content
+      p
+        font-size: 16px
+        line-height: 20px
+        width: 60%
+  .single-case_page
+    .section
+      .tag-cloud
+        .title
+          margin-bottom: 36px
+        .tags
+          .item
+            font-size: 13px
+            line-height: 18px
+            padding: 10px 20px
+  .single-case_page
+    .section
+      .about-brand
+        .title
+          font-size: 32px
+          line-height: 41px
+        p
+          font-size: 16px
+          line-height: 22px
+  .service_page_calc
+    .service_page_calc__wrapper
+      .calc_form
+        .block.main
+          .line
+            label
+              .name
+                font-size: 21px
+                line-height: 27px
+              span
+                font-size: 11px
+                line-height: 14px
+
 
 @media (min-width: 1600px)
   .hero
@@ -1612,5 +1688,30 @@
       line-height: 6vw
       span
         font-size: 0.8vw
-        line-height: 1vw
+        line-height: 22px
 
+.order-5
+  -webkit-box-ordinal-group: 6!important
+  -ms-flex-order: 5!important
+  order: 5!important
+.order-6
+  -webkit-box-ordinal-group: 7!important
+  -ms-flex-order: 6!important
+  order: 6!important
+.order-7
+  -webkit-box-ordinal-group: 8!important
+  -ms-flex-order: 7!important
+  order: 7!important
+@media (min-width: 992px)
+  .order-lg-5
+    -webkit-box-ordinal-group: 6!important
+    -ms-flex-order: 5!important
+    order: 5!important
+  .order-lg-6
+    -webkit-box-ordinal-group: 7!important
+    -ms-flex-order: 6!important
+    order: 6!important
+  .order-lg-7
+    -webkit-box-ordinal-group: 8!important
+    -ms-flex-order: 7!important
+    order: 7!important

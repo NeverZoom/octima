@@ -442,9 +442,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	if ($('footer')) {
 		gsap.from("footer", {
-			opacity: 0, 
+			// opacity: 0, 
 			duration: 1,
-			// y: 60,
+			y: 60,
 			scrollTrigger: {
 				trigger: "footer",
 				start:"top 100%",
@@ -580,7 +580,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			scrollbar: {
 				el: '.swiper-scrollbar',
 				draggable: true,
-				dragSize: 85,
+				dragSize: 76,
 				snapOnRelease: true,
 			},
 			breakpoints: {
