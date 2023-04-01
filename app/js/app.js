@@ -74,14 +74,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	if($('.calc_form label input[type=checkbox]')) {
 		$('.calc_form label input[type=checkbox]').on('change', function() {
-
 			if ($(this).siblings('.input').hasClass('active') == true) {
 				$(this).siblings('.input').removeClass('active');
 			} else {
 				$(this).siblings('.input').addClass('active');
 			}
+		});
 
-			
+		$('.calc_form label input[type=radio]').on('change', function() {		
+			if ($(this).siblings('svg').hasClass('active') == true) {
+				$(this).siblings('svg').removeClass('active');
+			} else {
+				$('.calc_form label input[type=radio]').siblings('svg').removeClass('active')
+				$(this).siblings('svg').addClass('active');
+			}
 		});
 	}
 
@@ -444,7 +450,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		gsap.from("footer", {
 			// opacity: 0, 
 			duration: 1,
-			y: 60,
+			y: -60,
 			scrollTrigger: {
 				trigger: "footer",
 				start:"top 100%",
@@ -555,7 +561,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 	
-
 	var desctop = $('.hero video').data( "desctop" );
 	var mobile = $('.hero video').data( "mobile" );	
 	if (desctop) {
@@ -570,8 +575,26 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-	if (document.documentElement.clientWidth < 1120 && $('.swiper_servs')) {
-  	const swiper = new Swiper('.swiper_servs', {
+  const breakpoint = window.matchMedia( '(max-width:1120px)' );
+  // keep track of swiper instances to destroy later
+  let mySwiper;
+
+  const breakpointChecker = function() {
+    // if larger viewport and multi-row layout needed
+    if ( breakpoint.matches === false ) {
+      // clean up old instances and inline styles when available
+	  if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+	  // or/and do nothing
+	  return;
+      // else if a small viewport and single column layout needed
+      } else if ( breakpoint.matches === true ) {
+        // fire small viewport version of swiper
+        return enableSwiper();
+      }
+  };
+
+  const enableSwiper = function() {
+  	mySwiper = new Swiper('.swiper_servs', {
 			loop: false,
 			// centeredSlides: true,
 			slidesPerView: "auto",
@@ -617,7 +640,12 @@ document.addEventListener('DOMContentLoaded', () => {
 				
 			},
 		});
-	}
+  };
+
+  // keep an eye on viewport size changes
+  breakpoint.addListener(breakpointChecker);
+  // kickstart
+  breakpointChecker();
 
 	$('.burger').on('click', function() {
 		$('.lay').addClass('active') ;
