@@ -1,9 +1,17 @@
 .service_page_calc
-  mask-image: url(../images/dist/calc_layer.svg)
+  // mask-image: url(../images/dist/calc_layer.svg)
   background: white
   position: relative
   mask-repeat: round
   // mask-size: cover
+  .abx,.abx_m
+    position: absolute
+    top: -55px
+    left: 0
+    width: 100%
+    z-index: 2
+  .abx_m
+    top: -35px !important
   .top
     position: absolute
     bottom: 0
@@ -47,7 +55,7 @@
         max-width: 30%
         display: flex
         flex-direction: column
-        justify-content: space-evenly
+        justify-content: space-between
         align-items: center
         .price
           font-weight: 500
@@ -151,6 +159,7 @@
             input
               display: none
             svg
+              margin-top: 3px
               width: 20px
               height: 20px
             .name
@@ -165,6 +174,7 @@
               line-height: 14px
               letter-spacing: 0.03em
           .price
+            margin-top: -3px
             font-weight: 500
             font-size: 24px
             line-height: 31px

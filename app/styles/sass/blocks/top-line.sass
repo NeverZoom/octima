@@ -18,6 +18,9 @@
       list-style: none
       display: flex
       gap: 0 35px
+      li.current-menu-item
+        a
+          color: #C7FF4F
       li
         a.active
           color: #C7FF4F
@@ -84,9 +87,12 @@
       display: flex
       flex-direction: column
       gap: 15px 0
+      li.current-menu-item
+        a
+          color: #8854F6
       li
         a.active
-          color: #C7FF4F
+          color: #8854F6
         a
           font-weight: 500
           text-decoration: none
@@ -97,12 +103,12 @@
           color: $textcolor
           transition: all 0.3s ease
           &:hover
-            color: #C7FF4F
+            color: #8854F6
   .close
     transition: all 0.2s ease
     position: absolute
-    right: 30px
-    top: 30px
+    right: 20px
+    top: 40px
   .rotating-10
     transition: all 0.2s ease
     position: absolute

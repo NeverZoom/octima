@@ -1,8 +1,17 @@
 .service_wrapper
-  mask-image: url(../images/dist/about_layer.svg)
+  // mask-image: url(../images/dist/about_layer.svg)
   background: white
   mask-repeat: round
   mask-size: cover
+  position: relative
+  .abx,.abx_m
+    position: absolute
+    top: -65px
+    left: 0
+    width: 100%
+    z-index: 2
+  .abx_m
+    top: -35px !important
   .service_wrapper__content
     padding-bottom: 120px
     min-height: 100vh
@@ -30,7 +39,7 @@
             color: #8854F6
       .price
         .price-info
-          color: white
+          color: rgba(white, 0.7)
       .last-price
         color: white
       .button
@@ -42,7 +51,7 @@
       .list
         li
           span
-            color: white
+            color: rgba(white, 0.7)
     .wrapper-item
       display: flex
       flex-direction: column
@@ -53,9 +62,6 @@
       border: 2px solid #8854F6
       border-radius: 47px
       width: calc( 100% / 3 - 40px)
-      &:last-child
-        .title
-          color: #8854F6
       .tags
         display: flex
         gap: 10px
@@ -115,6 +121,7 @@
           font-size: 13.2414px
           line-height: 16px
         .price-info
+          font-family: akzidenzgroteskpro
           font-weight: 400
           font-size: 8px
           line-height: 10px

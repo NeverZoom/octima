@@ -34,7 +34,9 @@ main, .layer
 .button-dark
   color: white
   background: $textcolor
+  border: 2px solid $textcolor
   &:hover
+    border: 2px solid #8854F6
     background: #8854F6
     color: white
 
@@ -84,3 +86,16 @@ a.top
   right: 70px
   bottom: 35px
   z-index: 100
+
+#service_popup
+  label
+    input
+      display: none
+    svg
+      margin-right: 10px
+      .checbox
+        opacity: 0
+  label
+    svg.active
+      .checbox
+        opacity: 1

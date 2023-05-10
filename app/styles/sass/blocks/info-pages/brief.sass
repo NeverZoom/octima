@@ -1,0 +1,358 @@
+.brief
+  padding-bottom: 120px
+  .subtitle
+    color: $textcolor
+    text-transform: none
+    font-size: 14px
+    line-height: 18px 
+    letter-spacing: 0.06em
+
+.brief-content
+  background: $textcolor
+  padding: 100px 0 150px 0
+  position: relative
+  .lil
+    text-transform: none
+  .button
+    border: none
+  .hovered.active
+    .layout
+      fill: $textcolor
+    .hovered-text
+      fill: white
+  .hovered
+    path
+      transition: all 0.3s ease
+    &:hover
+      cursor: pointer
+      fill: $textcolor
+      .layout
+        fill: $textcolor
+      .hovered-text
+        fill: white
+  .brief-svg
+    position: absolute
+    top: -53px
+    left: 0
+    width: 100%
+    z-index: 2
+  .brief-form.active
+    display: block
+  .brief-form
+    position: relative
+    counter-reset: form
+    display: none
+  .block
+    background: #F7F7F7
+    border-radius: 31px
+    padding: 60px
+    margin-bottom: 40px
+    position: relative
+    .brand-info
+      position: absolute
+      transform: rotate(-90deg)
+      font-weight: 400
+      font-size: 9px
+      line-height: 22px
+      letter-spacing: 0.08em
+      color: #888888
+      left: -10%
+      bottom: 40%
+    .item
+      padding-left: 90px
+      position: relative
+      margin-bottom: 25px
+      &::before
+        content: counter(form)
+        counter-increment: form
+        position: absolute
+        left: 0
+        border-radius: 100%
+        top: -10px
+        height: 56px
+        width: 56px
+        border: 2px solid $textcolor
+        font-weight: 400
+        font-size: 24px
+        line-height: 31px
+        display: flex
+        justify-content: center
+        align-items: center
+      .title
+        font-weight: 500
+        font-size: 24px
+        line-height: 31px
+        letter-spacing: 0.05em
+        margin-bottom: 18px
+      .subtitle
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        letter-spacing: 0.06em
+        color: #888888
+        b
+          color: #8854F6
+          font-weight: 500
+      textarea, input[type="text"]
+        margin-top: 40px
+        width: 100%
+        resize: none
+        background: #FFFFFF
+        border: 2px solid #BFBFBF
+        border-radius: 31px
+        padding: 27px 40px
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.05em
+        color: #888888
+        height: 136px
+        &::placeholder
+          font-weight: 400
+          font-size: 12px
+          line-height: 15px
+          letter-spacing: 0.05em
+          color: #888888
+      input[type="text"]
+        height: 60px
+      .brand
+        margin-top: 60px
+        .line
+          display: flex
+          gap: 40px
+          margin-bottom: 26px
+          .range
+            width: 100%
+            position: relative
+            input
+              appearance: none
+              outline: none
+              padding: 0
+              width: 100%
+              height: 8px
+              border-radius: 10px
+              background: #D9D9D9
+            input::-webkit-slider-thumb
+              border-radius: 100%
+              appearance: none
+              width: 22px
+              height: 22px
+              background: #8854F6
+              border: 2px solid #8854F6
+            .first, .second
+              position: absolute
+              bottom: -2px
+              font-weight: 400
+              font-size: 16px
+              line-height: 22px
+              letter-spacing: 0.06em
+              color: #888888
+            .first
+              left: 0
+            .second
+              right: 0
+          .logo
+            overflow: hidden
+            width: 120px
+            height: 60px
+            background: #FFFFFF
+            border: 2px solid #BFBFBF
+            border-radius: 47.4783px
+            display: flex
+            justify-content: center
+            align-items: center
+      .radio-list
+        margin-top: 40px
+        margin-bottom: 25px
+        display: flex
+        flex-direction: column
+        gap: 25px
+        label
+          display: flex
+          gap: 13px
+          font-weight: 500
+          font-size: 16px
+          line-height: 20px
+          letter-spacing: 0.05em
+          &:hover
+            cursor: pointer
+          input
+            display: none
+          svg
+            width: 21px
+            height: 21px
+            circle
+              &:nth-child(1)
+                fill: none
+          svg.active
+            circle
+              &:nth-child(1)
+                fill: #8854F6
+      .checkbox-list
+        margin: 70px 0
+        display: flex
+        justify-content: space-between
+        .column
+          display: flex
+          flex-direction: column
+          gap: 13px
+          label
+            display: flex
+            align-items: center
+            gap: 19px
+            font-weight: 400
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            &:hover
+              cursor: pointer
+            input
+              display: none
+            svg
+              rect
+                transition: all 0.3s ease
+            svg.active
+              rect
+                fill: #8854F6
+                stroke: #8854F6
+      .file.active
+        border-color: green
+        color: green
+        svg
+          path
+            stroke: green
+      .file
+        min-width: 260px
+        margin-top: 40px
+        background: #FFFFFF
+        border: 2px solid #BFBFBF
+        border-radius: 28px
+        font-weight: 500
+        font-size: 11px
+        line-height: 14px
+        letter-spacing: 0.12em
+        text-transform: uppercase
+        color: #BFBFBF
+        padding: 15px 25px
+        display: inline-flex
+        align-items: center
+        gap: 21px
+        &:hover
+          cursor: pointer
+      input.input
+        display: none
+      .suprange
+        margin-top: 40px
+        position: relative
+        .first, .second
+          font-weight: 400
+          font-size: 16px
+          line-height: 22px
+          letter-spacing: 0.06em
+          color: #888888
+          position: absolute
+          bottom: -25px
+        .first
+          left: 0
+        .second
+          right: 0
+        .counter
+          pointer-events: none
+          left: 0px
+          position: absolute
+          z-index: 51
+          top: 2px
+          font-weight: 500
+          font-size: 10px
+          line-height: 13px
+          text-align: center
+          display: flex
+          justify-content: center
+          align-items: center
+          letter-spacing: 0.05em
+          width: 48px
+          height: 24px
+          border-radius: 19px
+          background: #FFFFFF
+          border: 2px solid #8854F6
+          color: #8854F6
+        input
+          position: relative
+          appearance: none
+          outline: none
+          padding: 0
+          width: 100%
+          height: 8px
+          border: none
+          background: #D9D9D9
+          border-radius: 10px
+        input::-webkit-slider-thumb
+          appearance: none
+          // border-radius: 19px
+          width: 48px
+          height: 24px
+          // background: #FFFFFF
+          // border: 2px solid #8854F6
+
+.block.disabled
+  // display: none
+  height: 0
+  overflow: hidden
+  padding: 0 !important
+  margin: 0 !important
+  pointer-events: none
+
+.count-page
+  color: white
+  font-weight: 400
+  font-size: 13px
+  line-height: 17px
+  letter-spacing: 0.05em
+  position: absolute
+  bottom: 20px
+  left: 30px
+
+.send-form
+  margin: 0 auto
+  padding: 20px 36px
+  font-weight: 500
+  font-size: 11px
+  line-height: 14px
+  text-align: center
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  color: #FFFFFF
+  background: #8854F6
+  border-radius: 28px
+  display: flex
+  width: 165px
+  align-items: center
+  justify-content: center
+  &:hover
+    background: #FFFFFF
+    color: #8854F6
+    
+
+.go-next
+  border: 2px solid #FFFFFF
+  border-radius: 28px
+  width: 145px
+  padding: 16px 20px
+  display: flex
+  justify-content: center
+  gap: 15px
+  align-items: center
+  color: white
+  text-decoration: none
+  margin: 0 auto
+  &:hover
+    color: white
+
+.brief-navs
+  display: flex
+  gap: 20px
+  justify-content: flex-end
+  padding: 0 10px
+  .go-next
+    margin: 0

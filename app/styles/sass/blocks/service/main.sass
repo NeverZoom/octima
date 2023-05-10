@@ -1,5 +1,5 @@
 .service_page_wrapper
-  min-height: 110vh
+  min-height: calc(115vh + 56px)
   background: $textcolor
   color: white
   // padding-bottom: 120px
@@ -154,12 +154,18 @@
   .wrapper-item
     background: #2F2F2F !important
     border: none !important
+    .price-info, .last-price
+      color: #888 !important
     .button
       &:hover
         color: #8854F6 !important
         background: white !important
   .wrapper-item.primary
     background: linear-gradient(180deg, #8854F6 0%, rgba(136, 84, 246, 0.62) 100%) !important
+    .price-info
+      color: hsla(0,0%,100%,.7) !important
+    .last-price
+      color: white !important
     .button
       &:hover
         color: white !important

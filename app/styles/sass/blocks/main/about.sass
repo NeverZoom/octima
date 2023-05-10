@@ -1,15 +1,23 @@
 .about_wrapper
-  mask-image: url(../images/dist/about_layer.svg)
+  // mask-image: url(../images/dist/about_layer.svg)
   background: white
   position: relative
   mask-repeat: round
   padding-bottom: 40px
+  .abx,.abx_m
+    position: absolute
+    top: -65px
+    left: 0
+    width: 100%
+    z-index: 2
+  .abx_m
+    top: -35px !important
   .top
     position: absolute
     bottom: 0
     right: 70px
   .about_wrapper__content
-    height: 100vh
+    height: calc(110vh + 66px)
     .wrapper-title
       margin-bottom: 50px
       font-weight: 500

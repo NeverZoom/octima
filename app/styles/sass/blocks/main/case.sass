@@ -1,5 +1,5 @@
 .case_wrapper
-  mask-image: url(../images/dist/case_layer.svg)
+  // mask-image: url(../images/dist/case_layer.svg)
   background: $textcolor
   mask-repeat: round
   // mask-size: contain
@@ -7,6 +7,14 @@
   min-height: 100vh
   padding-bottom: 40px
   position: relative
+  .abx,.abx_m
+    position: absolute
+    top: -65px
+    left: 0
+    width: 100%
+    z-index: 2
+  .abx_m
+    top: -35px !important
   .top
     position: absolute
     bottom: 40px
@@ -129,7 +137,7 @@
             object-fit: contain
             object-position: left top
           .link
-            padding: 23px 27px
+            padding: 18px 22px
             border: 2px solid #FFFFFF
             border-radius: 47.4783px
             display: inline-block
@@ -140,6 +148,7 @@
                 path
                   transform: translateX(-5px)
             svg
+              transform: scale(0.8)
               display: flex !important
               path
                 transition: all 0.3s ease
@@ -152,7 +161,7 @@
         gap: 20px 20px
         grid-auto-flow: row
         grid-template-areas: "one one one two two two five five five five" "one one one two two two five five five five" "four four four two two two six six six six" "four four four two two two six six six six" "four four four three three three six six six six" "four four four three three three six six six six"
-        .one, .four, .two, .three, .five, .six
+        .one, .four, .two, .three, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen, .nineteen
           border-radius: 47px
           overflow: hidden
           position: relative

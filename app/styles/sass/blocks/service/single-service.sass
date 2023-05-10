@@ -2,13 +2,38 @@
   color: white
   background: $textcolor
   padding-bottom: 100px
+  .main-tag
+    font-weight: 500
+    font-size: 11px
+    line-height: 14px
+    text-decoration: none
+    display: inline-flex
+    width: 150px
+    gap: 10px
+    align-items: center
+    justify-content: center
+    letter-spacing: 0.12em
+    text-transform: uppercase
+    color: #BFBFBF
+    padding: 16px 20px
+    border: 2px solid #BFBFBF
+    border-radius: 28px
+    margin-bottom: 50px
   .title
     font-weight: 500
-    font-size: 60px
-    line-height: 76px
+    font-size: 50px
+    line-height: 60px
     letter-spacing: 0.055em
     margin-top: 90px
     margin-bottom: 70px
+    color: #FFFFFF
+  .main-title
+    margin-bottom: 80px
+    font-weight: 500
+    font-size: 32px
+    line-height: 41px
+    letter-spacing: 0.055em
+    text-transform: uppercase
     color: #FFFFFF
   .main_wrapper
     background: #2F2F2F
@@ -24,14 +49,6 @@
       &:hover
         background: white
         color: $textcolor
-    .main-title
-      margin-bottom: 80px
-      font-weight: 500
-      font-size: 32px
-      line-height: 41px
-      letter-spacing: 0.055em
-      text-transform: uppercase
-      color: #FFFFFF
     .list
       counter-reset: list
       .gallery
@@ -42,11 +59,13 @@
         .img
           border-radius: 47.085px
           height: 255px
-          width: calc(100% / 3 - 30px)
+          width: calc(100% / 3 - 15px)
           display: flex
           justify-content: center
           align-items: center
           img
+            height: 100%
+            object-fit: cover
             width: 100%
       .item
         padding-left: 90px
