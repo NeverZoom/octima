@@ -1,5 +1,7 @@
 .taplink_wrapper
-  background: $textcolor
+  background-size: cover
+  background-position: center
+  // background: $textcolor
   height: 110vh
   color: white
   display: flex
@@ -11,7 +13,7 @@
       height: 100%
   .logo
     width: 80%
-    margin: 0 auto 60px auto
+    margin: 0 auto 40px auto
   .buttons
     margin-bottom: 25px
     display: flex
@@ -30,14 +32,21 @@
       text-transform: uppercase
       svg
         transition: all 0.3s ease
+        circle
+          fill: none
+          stroke: #141414
+          stroke-width: 2px
+          r: 19.5
+        path
+          fill: #141414
       &:hover
         svg
           transform: rotate(-90deg)
     .button-first
-      background: #8854F6
-      color: #FFFFFF
+      background: #fff
+      color: #141414
     .button-second
-      background: linear-gradient(269.07deg, #C7FF4F 0%, #D5FF7A 29.94%, #EFFFCC 47.85%, #D8FF85 63.43%, #C7FF4F 97.43%)
+      background: #C7FF4F
       color: $textcolor
     .button-third
       background: white
@@ -49,13 +58,14 @@
     text-align: center
     letter-spacing: 0.05em
     color: #FFFFFF
+    margin-bottom: 25px
   .hr
-    margin-top: 40px
-    margin-bottom: 40px
+    margin-top: 0px
+    margin-bottom: 140px
     margin-left: auto
     margin-right: auto
   .button-third
-    margin-bottom: 25px
+    margin-bottom: 0px
   .link
     margin-bottom: 9px
     font-weight: 400

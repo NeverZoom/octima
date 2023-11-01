@@ -4,6 +4,21 @@
   position: relative
   mask-repeat: round
   padding-bottom: 40px
+  .new_line
+    margin-bottom: 100px
+    margin-top: -120px
+    span.d-none
+      margin-bottom: 0
+    span
+      margin-bottom: 40px
+      color: #141414
+      font-size: 16px
+      font-weight: 400
+      line-height: normal
+      display: block
+    svg
+      width: 100%
+      max-width: 1320px
   .abx,.abx_m
     position: absolute
     top: -65px
@@ -11,13 +26,13 @@
     width: 100%
     z-index: 2
   .abx_m
-    top: -35px !important
+    top: -41px !important
   .top
     position: absolute
     bottom: 0
     right: 70px
   .about_wrapper__content
-    height: calc(110vh + 66px)
+    height: calc(115vh + 66px)
     .wrapper-title
       margin-bottom: 50px
       font-weight: 500
@@ -46,6 +61,7 @@
       width: 100%
     .one, .two
       position: absolute
+      display: none
     .one
       bottom: -15%
       left: 25%

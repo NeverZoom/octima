@@ -81,13 +81,131 @@ main
         transform: translateY(-5px)
 
 a.top
-  mix-blend-mode: difference
+  // mix-blend-mode: difference
+  // position: fixed
+  // right: 70px
+  // bottom: 35px
+  // z-index: 100
+
+a.phone_blob.inv
+  svg
+    circle
+      fill: #8854F6
+    path
+      fill: white
+.modal.inv
+  background: #8854F6
+  .success
+    background: #8854F6
+    color: white
+    svg
+      path
+        stroke: white
+  form
+    .title
+      color: white
+  .close
+    svg
+      line
+        stroke: white
+
+
+a.phone_blob
   position: fixed
   right: 70px
   bottom: 35px
   z-index: 100
+  height: fit-content
 
-#service_popup
+.modal.active
+  opacity: 1
+  pointer-events: all
+  z-index: 4
+.modal
+  transition: all 0.3s ease
+  opacity: 0
+  pointer-events: none
+  z-index: -1
+  position: fixed
+  right: calc(70px + 10px + 56px)
+  bottom: 35px
+  // right: calc(100% + 10px)
+  // bottom: 0
+  width: 335px
+  height: 238px
+  background: #C7FF4F
+  border-radius: 30px
+  padding: 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  .success.active
+    z-index: 25
+    opacity: 1
+    pointer-events: all
+  .success
+    border-radius: 30px
+    transition: all 0.3s ease
+    gap: 35px
+    background: #C7FF4F
+    pointer-events: none
+    z-index: -1
+    opacity: 0
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    color: #141414
+    font-size: 12px
+    font-weight: 500
+    line-height: normal
+    letter-spacing: 0.6px
+  form
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 28px
+    .title
+      color: #141414
+      text-align: center
+      font-size: 12px
+      font-weight: 500
+      line-height: normal
+      letter-spacing: 0.6px
+    input
+      color: #BFBFBF
+      font-size: 14px
+      font-weight: 500
+      line-height: normal
+      letter-spacing: 0.7px
+      background: white
+      border-radius: 28px
+      width: 100%
+      padding: 12px 50px
+      border: none
+      &::placeholder
+        color: #BFBFBF
+        font-size: 14px
+        font-weight: 500
+        line-height: normal
+        letter-spacing: 0.7px
+    .close
+      z-index: 2
+      top: 21px
+      right: 24px
+      position: absolute
+      &:hover
+        cursor: pointer
+
+
+#service_popup, #lk_popup, #service_popup_p1, .block_form
   label
     input
       display: none
@@ -99,3 +217,46 @@ a.top
     svg.active
       .checbox
         opacity: 1
+
+
+.preloader
+  position: fixed
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  overflow: hidden
+  z-index: 1001
+  height: 100%
+  width: 100%
+  background: #141414
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  gap: 20px
+  svg
+    width: 250px
+    animation: preloader 2s forwards
+
+@keyframes preloader
+  0%
+    opacity: 0
+    transform: translateY(50px)
+  100%
+    transform: translateY(0px)
+    opacity: 1 
+
+.loaded_hiding .preloader
+  transition: 0.3s opacity
+  opacity: 0
+
+.loaded .preloader
+  display: none
+
+.loader-counter
+  color: white
+  font-size: 20px
+  line-height: 20px
+  display: block
+  animation: preloader 2s forwards

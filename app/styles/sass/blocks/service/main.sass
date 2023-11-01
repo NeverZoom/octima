@@ -28,122 +28,201 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    gap: 45px 30px
+    gap: 20px
     .item
-      height: 255px
-      width: calc(100% / 3 - 30px) 
-      border-radius: 47.085px
+      &:nth-child(1), &:nth-child(2), &:nth-child(6), &:nth-child(7)
+        width: calc(100% / 2 - 10px)
+      &:nth-child(3), &:nth-child(4), &:nth-child(5)
+        width: calc(100% / 3 - 20px) 
+    .item
+      height: 207px
+      // width: calc(100% / 3 - 30px) 
+      border-radius: 30px
       position: relative
+      overflow: hidden
       img
         position: absolute
-        right: 35px
-        top: 30px
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+      span
+        display: flex
+        justify-content: space-between
+        align-items: center
+        p
+          color: #141414
+          font-size: 12px
+          font-weight: 400
+          line-height: normal
+          transition: all 0.3s linear
+          margin: 0
       .title
-        position: absolute
-        bottom: 30px
-        left: 36px
         font-weight: 500
-        font-size: 16px
-        line-height: 20px
-        letter-spacing: 0.05em
+        font-size: 22px
+        line-height: normal
+        letter-spacing: 1.1px
         text-transform: uppercase
-        margin-bottom: 0
-    .first,.second,.third,.fourth,.fifth,.sixth
-      border-radius: 47.085px
+        transition: all 0.3s linear
+        margin: 0
+    .first,.second,.third,.fourth,.fifth,.sixth, .seventh
+      border-radius: 30px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 25px 30px
+      height: 100%
+      position: relative
+      z-index: 2
+      transition: all 0.3s linear
+      svg
+        path, circle
+          transition: all 0.3s linear
+      &:hover
+        cursor: pointer
+        background: transparent
+        svg
+          circle
+            stroke: #fff
+          path
+            fill: #fff
+        span
+          p
+            color: #fff
+        .title
+          color: #fff
     .first
-      background: linear-gradient(246.53deg, #C7FF4F 3.38%, #E8FEBA 45.75%, #C7FF4F 94.54%)
+      background-color: white
+      svg
+        circle
+          stroke: #141414
+        path
+          fill: #141414
       .title
         color: $textcolor
-      img
-        max-width: 200px
     .second
-      background: #8854F6
+      background-color: #59595C
+      svg
+        circle
+          stroke: #fff
+        path
+          fill: #fff
       .title
         color: white
-      img
-        max-width: 200px
-        max-height: 120px
+      span
+        p
+          color: white
     .third
-      background: white
+      background-color: white
+      svg
+        circle
+          stroke: #141414
+        path
+          fill: #141414
       .title
         color: $textcolor
-      img  
-        max-width: 180px    
     .fourth
-      background: white
+      background-color: #CACACA
+      svg
+        circle
+          stroke: #141414
+        path
+          fill: #141414
       .title
         color: $textcolor
-      img
-        max-width: 160px
     .fifth
-      background: #C7FF4F
+      background-color: #CACACA
+      svg
+        circle
+          stroke: #141414
+        path
+          fill: #141414
       .title
         color: $textcolor
-      img
-        max-width: 100px
     .sixth
-      background: url(../images/dist/service-sixth_bg.png)
-      background-size: cover
+      background-color: #59595C
+      span
+        p
+          color: white
+      svg
+        circle
+          stroke: #fff
+        path
+          fill: #fff
+      .title
+        color: white
+    .seventh
+      background-color: #fff
+      svg
+        circle
+          stroke: #141414
+        path
+          fill: #141414
       .title
         color: $textcolor
-      img
-        max-width: 160px
 
 
-.flip-card
-  // perspective: 1000px
-.flip-card-back 
-  transition: all 0.6s ease-in-out
-  &:hover
-    opacity: 1
-.flip-card-inner
-  position: relative
-  width: 100%
-  height: 100%
-  transition: all 0.8s ease-in-out
-  // transform-style: preserve-3d
-.flip-card:hover .flip-card-inner 
-  // transform: rotateY(180deg)
-  // opacity: 0
-.flip-card-front, .flip-card-back 
-  position: absolute
-  width: 100%
-  height: 100%
-  // backface-visibility: hidden
-.flip-card-back 
-  opacity: 0
-  background: #8854F6
-  border-radius: 47.085px
-  // transform: rotateY(180deg)
-  padding: 25px 23px
-  display: flex
-  justify-content: space-between
-  flex-direction: column
-  h1
-    margin-bottom: 16px
-    font-weight: 500
-    font-size: 16px
-    line-height: 20px
-    letter-spacing: 0.05em
-    text-transform: uppercase
-    color: #FFFFFF
-  p 
-    font-weight: 400
-    font-size: 12px
-    line-height: 15px
-    color: #FFFFFF
-    width: 95%
-  .button
-    padding: 16px 20px
-    background: white
-    color: $textcolor
-    font-size: 11px
-    line-height: 14px
-  svg
-    width: 40px
-    height: 40px
+
+
+// .flip-card
+//   // perspective: 1000px
+// .flip-card-back 
+//   transition: all 0.6s ease-in-out
+//   &:hover
+//     opacity: 1
+// .flip-card-inner
+//   position: relative
+//   width: 100%
+//   height: 100%
+//   transition: all 0.8s ease-in-out
+//   // transform-style: preserve-3d
+// .flip-card:hover .flip-card-inner 
+//   // transform: rotateY(180deg)
+//   // opacity: 0
+// .flip-card-front, .flip-card-back 
+//   position: absolute
+//   width: 100%
+//   height: 100%
+//   // backface-visibility: hidden
+// .flip-card-back 
+//   opacity: 0
+//   background: #8854F6
+//   border-radius: 47.085px
+//   // transform: rotateY(180deg)
+//   padding: 25px 23px
+//   display: flex
+//   justify-content: space-between
+//   flex-direction: column
+//   h1
+//     margin-bottom: 16px
+//     font-weight: 500
+//     font-size: 16px
+//     line-height: 20px
+//     letter-spacing: 0.05em
+//     text-transform: uppercase
+//     color: #FFFFFF
+//   p 
+//     font-weight: 400
+//     font-size: 12px
+//     line-height: 15px
+//     color: #FFFFFF
+//     width: 95%
+//   .button
+//     padding: 16px 20px
+//     background: white
+//     color: $textcolor
+//     font-size: 11px
+//     line-height: 14px
+//   svg
+//     width: 40px
+//     height: 40px
 
 .service_page
+  .wrapper-title
+    svg.rotating-10
+      path
+        fill: #59595C !important
   .layer
     background: white
   .service_wrapper
@@ -154,26 +233,49 @@
   .wrapper-item
     background: #2F2F2F !important
     border: none !important
+    &:hover
+      background: #8854F6 !important
+      color: white !important
+      .tags
+        .item
+          &:first-child
+            color: white !important
+            border: 2px solid white !important
+          &:last-child
+            background: white !important
+            color: #8854F6 !important
+      .list
+        li
+          span
+            color: #fff !important
+      .price
+        .price-info
+          color: #fff !important
+      .last-price
+        color: #fff !important
+      .button
+        color: #8854F6 !important
+        background: #fff !important
     .price-info, .last-price
       color: #888 !important
     .button
       &:hover
-        color: #8854F6 !important
-        background: white !important
-  .wrapper-item.primary
-    background: linear-gradient(180deg, #8854F6 0%, rgba(136, 84, 246, 0.62) 100%) !important
-    .price-info
-      color: hsla(0,0%,100%,.7) !important
-    .last-price
-      color: white !important
-    .button
-      &:hover
-        color: white !important
-        background: #8854F6 !important
-    .tags
-      .item
-        &:last-child
-          color: #8854F6 !important
+        // color: #8854F6 !important
+        // background: white !important
+  // .wrapper-item.primary
+  //   background: linear-gradient(180deg, #8854F6 0%, rgba(136, 84, 246, 0.62) 100%) !important
+  //   .price-info
+  //     color: hsla(0,0%,100%,.7) !important
+  //   .last-price
+  //     color: white !important
+  //   .button
+  //     &:hover
+  //       color: white !important
+  //       background: #8854F6 !important
+  //   .tags
+  //     .item
+  //       &:last-child
+  //         color: #8854F6 !important
   .tags
     .item
       .tags .item:last-child
@@ -181,6 +283,11 @@
     .item
       border-color: white !important
       color: white !important
+  .swiper-pagination
+    .swiper-pagination-bullet
+      border: 1px solid #fff
+    .swiper-pagination-bullet-active
+      background: #fff
   .swiper-scrollbar.swiper-scrollbar-horizontal
     background: #545454
   .swiper-scrollbar-drag

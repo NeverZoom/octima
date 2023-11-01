@@ -217,18 +217,41 @@
                 fill: #8854F6
                 stroke: #8854F6
       .file.active
-        border-color: green
-        color: green
+        border-color: #8854F6
+        color: #8854F6
         svg
           path
-            stroke: green
+            stroke: #8854F6
+      .file-info
+        display: flex
+        align-items: center
+        margin-top: 40px
+        p
+          margin-bottom: 0
+          font-weight: 400
+          font-size: 10px
+          line-height: 15px
+          letter-spacing: 0.08em
+          color: #888888
+          max-width: 250px
+          margin-left: 15px
+        .file-name-wrapper
+          .file-name
+            display: flex
+            gap: 10px
+            align-items: center
+            font-weight: 400
+            font-size: 12px
+            line-height: 22px
+            letter-spacing: 0.06em
+            color: #888888
       .file
         min-width: 260px
-        margin-top: 40px
         background: #FFFFFF
         border: 2px solid #BFBFBF
         border-radius: 28px
         font-weight: 500
+        margin-top: 0
         font-size: 11px
         line-height: 14px
         letter-spacing: 0.12em
@@ -335,7 +358,7 @@
     
 
 .go-next
-  border: 2px solid #FFFFFF
+  border: 2px solid #FFFFFF !important
   border-radius: 28px
   width: 145px
   padding: 16px 20px
